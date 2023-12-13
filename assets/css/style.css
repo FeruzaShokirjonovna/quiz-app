@@ -35,4 +35,29 @@ body {
     background-color: blueviolet;
 }
 
-.home 
+/*Home section*/
+.home {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-content {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home-content p {
+    font-size: 16px;
+    text-align: center;
+    padding: 20px;
+}
+
+.home-content h1 {
+    font-size: 58px;
+    text-shadow: 0 0 10px rgba(0 0 0 .2);
+}
