@@ -1,0 +1,20 @@
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Domine&family=Oswald:wght@300&family=Roboto&display=swap');
+
+/* Asterisc wildcard to override defult styles added by browser */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    color: white;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    
+}
