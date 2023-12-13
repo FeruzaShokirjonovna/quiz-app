@@ -16,5 +16,23 @@ body {
 .header {
     position: fixed;
     top: 0;
-    
+    left: 0;
+    width: 100%;
+    padding: 20px 10px;
+    background: seagreen;
+    z-index: 100;
 }
+
+.logo {
+    font-size: 32px;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.main {
+    min-height: 100vh;
+    background-color: blueviolet;
+}
+
+.home 
