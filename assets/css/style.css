@@ -61,3 +61,29 @@ body {
     font-size: 58px;
     text-shadow: 0 0 10px rgba(0 0 0 .2);
 }
+
+/* "pressed" effect on click customized from https://www.w3schools.com/css/css3_buttons.asp */
+.start-btn {
+    width: 190px;
+    height: 55px;
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #04AA6D;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+  
+  .start-btn:hover {background-color: #3e8e41}
+  
+  .start-btn:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
