@@ -114,4 +114,17 @@ body {
     transform: translateY(4px);
 }
 
+/* Style rules section*/
+.rules-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    background: turquoise;
+    border-radius: 8px;
+}
 
+.rules-info h2 {
+    font-size: 50px;
+}
