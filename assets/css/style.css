@@ -121,10 +121,79 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 500px;
-    background: turquoise;
+    background: snow;
     border-radius: 8px;
+    padding: 10px 25px;
+    color: #666;
+    opacity: 0;
+    pointer-events: none;
 }
 
 .rules-info h2 {
     font-size: 50px;
+}
+
+.rules-info p {
+    font-size: 18px;
+    margin: 6px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rules-info .info {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 4px 0;
+}
+/*Style of Buttons in Rules Info*/
+.rules-info .btn-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.rules-info .btn-group .info-btn-continue {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.4s;
+    width: 130px;
+    height: 45px;
+    text-decoration: none;
+    background-color: #06da8c;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    outline: none;
+    border-radius: 8px;
+}
+
+.rules-info .btn-group .info-btn-continue:hover {
+    background-color: #04AA6D; /* Green */
+    color: white;
+}
+
+.rules-info .btn-group .info-btn-exit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.4s;
+    width: 130px;
+    height: 45px;
+    text-decoration: none;
+    background-color: rgb(177, 175, 175);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    outline: none;
+    border-radius: 8px;
+}
+
+.rules-info .btn-group .info-btn-exit:hover {
+    background-color: gainsboro; /* Green */
+    color: white;
 }
