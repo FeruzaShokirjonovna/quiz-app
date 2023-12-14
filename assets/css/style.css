@@ -80,10 +80,38 @@ body {
     box-shadow: 0 9px #999;
 }
   
-  .start-btn:hover {background-color: #3e8e41}
+.start-btn:hover {background-color: #3e8e41}
   
-  .start-btn:active {
+.start-btn:active {
     background-color: #3e8e41;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
 }
+
+.rules-btn {
+    width: 190px;
+    height: 55px;
+    display: inline-block;
+    padding: 15px 25px;
+    margin-top: 25px;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #72d1f7;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+.rules-btn:hover {background-color: #3e7b8e}
+  
+.rules-btn:active {
+    background-color: #3e8b8e;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+
