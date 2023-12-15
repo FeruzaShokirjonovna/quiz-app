@@ -227,10 +227,13 @@ body {
 /*Style Quiz section*/
 .quiz-section {
     position: relative;
-    left: -50%;
+    /*left: -50%;*/
+    left: 0;
     width: 100%;
     background: seagreen;
     transition: .5s ease-out;
+    transition-delay: .20s;
+    z-index: 100;
 }
 
 .quiz-section.active {
