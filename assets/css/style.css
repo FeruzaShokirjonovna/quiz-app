@@ -238,7 +238,8 @@ body {
     /*left: -50%;*/
     left: 0;
     width: 100%;
-    background: #a389d3;
+    background: #e7f5ff;
+    color: #343a40;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -260,6 +261,8 @@ body {
     display: flex;
     flex-direction: column;
     padding: 20px 30px;
+    -webkit-box-shadow: 0px 5px 15px 3px rgba(0, 0, 0, 0.93);
+    box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.93);
 }
 
 .quiz-box h1 {
@@ -283,6 +286,7 @@ body {
 .quiz-box .question-text {
     font-size: 24px;
     font-weight: 600;
+    margin-top: 10px;
 }
 
 .options-list .option {
@@ -305,6 +309,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 20px;
+    border-top: 2px solid #19523d;
+    margin-top: ;
 }
 
 .quiz-footer .question-amount {
@@ -316,7 +323,7 @@ body {
 .quiz-footer .next-btn {
     display: inline-block;
     border-radius: 4px;
-    background-color: #4b30e6;
+    background-color: #6f6799;
     border: none;
     color: #FFFFFF;
     text-align: center;
