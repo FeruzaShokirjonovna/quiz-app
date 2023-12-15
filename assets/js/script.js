@@ -5,6 +5,7 @@ const main = document.querySelector('.main');
 const continueBtn = document.querySelector('.info-btn-continue');
 const quizSection = document.querySelector('.quiz-section');
 const startBtn = document.querySelector('.start-btn')
+const quizBox = document.querySelector('.quiz-box')
 
 /***
  * Rules info activates when the rules button clicked
@@ -25,11 +26,13 @@ continueBtn.onclick = () => {
     quizSection.classList.add('active');
     rulesInfo.classList.remove('active');
     main.classList.remove('active');
+    quizBox.classList.add('active');
 }
 
 startBtn.onclick = () => {
     quizSection.classList.add('active');
     rulesInfo.classList.remove('active');
     main.classList.remove('active');
+    quizBox.classList.add('active');
 }
 
