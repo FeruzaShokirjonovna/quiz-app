@@ -231,7 +231,7 @@ body {
     /*left: -50%;*/
     left: 0;
     width: 100%;
-    background: seagreen;
+    background: #a389d3;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -265,4 +265,32 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px 0;
+    border-bottom: 2px solid #19523d;
 }
+
+.quiz-header span {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.quiz-box .question-text {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.options-list .option {
+    width: 100%;
+    padding: 12px;
+    background: transparent;
+    border: 2px solid rgba(0, 0, 0, .2 );
+    border-radius: 3px;
+    font-size: 17px;
+    margin: 15px 0;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.options-list .option:hover {
+    background: rgba(0, 0, 0, .2 );
+}
+
