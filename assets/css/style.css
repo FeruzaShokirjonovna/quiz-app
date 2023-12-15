@@ -231,6 +231,9 @@ body {
     left: 0;
     width: 100%;
     background: seagreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     transition: .5s ease-out;
     transition-delay: .20s;
     z-index: 100;
@@ -238,4 +241,15 @@ body {
 
 .quiz-section.active {
     left: 0;
+}
+
+.quiz-section .quiz-box {
+    position: relative;
+    max-width: 500px;
+    background: transparent;
+    border: 2px solid #19523d;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px;
 }
