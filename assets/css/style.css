@@ -55,6 +55,7 @@ body {
     font-size: 16px;
     text-align: center;
     padding: 20px;
+    margin: 25px;
 }
 
 .home-content h1 {
@@ -119,7 +120,7 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(.9);
     width: 500px;
     background: snow;
     border-radius: 8px;
@@ -127,6 +128,13 @@ body {
     color: #666;
     opacity: 0;
     pointer-events: none;
+    transition: .3s ease;
+}
+
+.rules-info.active {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
 }
 
 .rules-info h2 {
@@ -163,6 +171,7 @@ body {
     transition-duration: 0.4s;
     width: 130px;
     height: 45px;
+    cursor: pointer;
     text-decoration: none;
     background-color: #06da8c;
     color: white;
@@ -185,6 +194,7 @@ body {
     width: 130px;
     height: 45px;
     text-decoration: none;
+    cursor: pointer;
     background-color: rgb(177, 175, 175);
     color: white;
     font-size: 16px;
