@@ -34,5 +34,16 @@ startBtn.onclick = () => {
     rulesInfo.classList.remove('active');
     main.classList.remove('active');
     quizBox.classList.add('active');
+
+    showQuestions
 }
 
+const nextBtn = document.querySelector('.next')
+
+/***
+ * Function to get questions from the array
+ */
+function showQuestions() {
+    const questionText = document.querySelector('.question-text');
+    questionText.textContent = '${questions[index].}';
+}
