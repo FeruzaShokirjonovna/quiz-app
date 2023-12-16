@@ -116,6 +116,14 @@ function getResult(optionElement){
     else{
         //set red background color if it is wrong
         optionElement.classList.add('wrong');
+
+        //show the true answer in green if user's answer is wrong
+        const optionLen = optionsList.children.length;
+        for(let i=0; i<optionLen; i++){
+            if(parseInt(optionsList.children[i].id) === currentQuestion.answer){
+                optionsList.children[i].classList.add('correct');
+            }
+        }
     }
 
     unclickableOptions();
