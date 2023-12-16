@@ -117,6 +117,18 @@ function getResult(optionElement){
         //set red background color if it is wrong
         optionElement.classList.add('wrong');
     }
+
+    unclickableOptions();
+}
+
+/***
+ * Function to choose one option per question
+ */
+function unclickableOptions(){
+    const optionLen = optionsList.children.length;
+    for(let i=0; i<optionLen; i++){
+        optionsList.children[i].classList.add('answered-once');
+    }
 }
 
 function next(){

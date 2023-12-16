@@ -305,6 +305,12 @@ body {
     overflow: hidden;
 }
 
+/*User cannot change options*/
+.options-list .option.answered-once {
+    pointer-events: none;
+}
+
+/*Set green background if answer is true*/
 .options-list .option.correct::before {
     content: '';
     position: absolute;
@@ -320,7 +326,22 @@ body {
 .options-list .option.correct {
     color: #fff;
 }
+/*Set red background if answer is wrong*/
+.options-list .option.wrong::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: red;
+    z-index: -1;
+    animation: .4s ease-out;
+}
 
+.options-list .option.wrong {
+    color: #fff;
+}
 
 
 .quiz-box .quiz-footer {
