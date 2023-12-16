@@ -80,6 +80,8 @@ function getNewQuestion(){
     for(let i=0; i<optionLen; i++){
         availableOptions.push(i)
     }
+
+
     //create options in html
     for(let i=0; i<optionLen; i++){
         //random option
@@ -89,13 +91,32 @@ function getNewQuestion(){
         //remove the option from options array, then option will not repeat
         availableOptions.splice(index2,1);
         const option = document.createElement("div");
-        option.innerHTML = currentQuestion.options[i];
-        option.id = i;
+        option.innerHTML = currentQuestion.options[optionIndex];
+        option.id = optionIndex;
+        
         option.className = "option";
         optionsList.appendChild(option)
+        option.setAttribute('onclick', 'getResult(this)');
     }
 
     questionCount++
+}
+
+/***
+ * Function to get the result of current attempt
+ */
+function getResult(optionElement){
+    const id = parseInt(optionElement.id);
+
+    //get the answer by comparing the id of the clicked option
+    if(id === currentQuestion.answer){
+        //set green background color if it is true
+        optionElement.classList.add('correct');
+    }
+    else{
+        //set red background color if it is wrong
+        optionElement.classList.add('wrong');
+    }
 }
 
 function next(){

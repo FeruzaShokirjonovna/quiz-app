@@ -300,12 +300,28 @@ body {
     font-size: 17px;
     margin: 15px 0;
     cursor: pointer;
-    transition: .3s;
+    opacity: 1;
+    position: relative;
+    overflow: hidden;
 }
 
-.options-list .option:hover {
-    background: rgba(0, 0, 0, .2);
+.options-list .option.correct::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: green;
+    z-index: -1;
+    animation: .4s ease-out;
 }
+
+.options-list .option.correct {
+    color: #fff;
+}
+
+
 
 .quiz-box .quiz-footer {
     display: flex;
