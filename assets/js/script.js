@@ -43,6 +43,7 @@ startBtn.onclick = () => {
 let questionCount = 0;
 let currentQuestion;
 let availableQuestions = [];
+let availableOptions = [];
 
 const nextBtn = document.querySelector('.next-btn')
 
@@ -71,9 +72,29 @@ function getNewQuestion(){
     const index1 = availableQuestions.indexOf(questionIndex);
     //remove the question index, that is why once given question will not repeated
     availableQuestions.splice(index1,1);
-    console.log(questionIndex);
-    console.log(availableQuestions);
     
+    //set options
+    //get the length of options
+    const optionLen = currentQuestion.options.length
+    //push options to available options array
+    for(let i=0; i<optionLen; i++){
+        availableOptions.push(i)
+    }
+    //create options in html
+    for(let i=0; i<optionLen; i++){
+        //random option
+        const optionIndex = availableOptions[Math.floor(Math.random() * availableOptions.length)];
+        // get the position of optionIndex from available options
+        const index2 = availableOptions.indexOf(optionIndex);
+        //remove the option from options array, then option will not repeat
+        availableOptions.splice(index2,1);
+        const option = document.createElement("div");
+        option.innerHTML = currentQuestion.options[i];
+        option.id = i;
+        option.className = "option";
+        optionsList.appendChild(option)
+    }
+
     questionCount++
 }
 
