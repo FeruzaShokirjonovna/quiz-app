@@ -10,6 +10,7 @@ const quizBox = document.querySelector('.quiz-box')
 const questionText = document.querySelector('.question-text');
 const questionNumber = document.querySelector('.question-number')
 const optionsList = document.querySelector('.options-list')
+const scoreIndicatorContainer = document.querySelector('.header-score')
 
 /***
  * Rules info activates when the rules button clicked
@@ -62,7 +63,7 @@ function setAvailableQuestions() {
  */
 function getNewQuestion(){
     //set question number
-    questionNumber.innerHTML = "Question" + " "+ (questionCount + 1) + " " + "of 10";
+    questionNumber.innerHTML = "Question" + " "+ (questionCount + 1) + " " + "of 5";
     //set question text
     //randomize questions
     const questionIndex = availableQuestions[Math.floor(Math.random() * availableQuestions.length)];
@@ -80,14 +81,17 @@ function getNewQuestion(){
     for(let i=0; i<optionLen; i++){
         availableOptions.push(i)
     }
-
+    //remove old options
+    optionsList.innerHTML = '';
 
     //create options in html
     for(let i=0; i<optionLen; i++){
         //random option
         const optionIndex = availableOptions[Math.floor(Math.random() * availableOptions.length)];
+        
         // get the position of optionIndex from available options
         const index2 = availableOptions.indexOf(optionIndex);
+       
         //remove the option from options array, then option will not repeat
         availableOptions.splice(index2,1);
         const option = document.createElement("div");
@@ -100,6 +104,7 @@ function getNewQuestion(){
     }
 
     questionCount++
+    
 }
 
 /***
@@ -112,11 +117,14 @@ function getResult(optionElement){
     if(id === currentQuestion.answer){
         //set green background color if it is true
         optionElement.classList.add('correct');
+        //add mark to correct answer
+        updateScoreIndicator('correct');
     }
     else{
         //set red background color if it is wrong
         optionElement.classList.add('wrong');
-
+        //add mark to incorrect answer
+        updateScoreIndicator('wrong');
         //show the true answer in green if user's answer is wrong
         const optionLen = optionsList.children.length;
         for(let i=0; i<optionLen; i++){
@@ -139,8 +147,25 @@ function unclickableOptions(){
     }
 }
 
+/***
+ * Function to set score
+ */
+function scoreIndicator() {
+    const totalQuestion = 5;
+    for(let i=0; i<totalQuestion; i++){
+        const indicator = document.createElement('div');
+        scoreIndicatorContainer.appendChild(indicator);
+    }
+}
+
+
+function updateScoreIndicator(markType){
+    scoreIndicatorContainer.children[questionCount-1].classList.add(markType)
+
+}
+
 function next(){
-    if(questionCount === 10){
+    if(questionCount === 5){
         console.log("quiz over")
     }
     else{
@@ -153,8 +178,7 @@ window.onload = function(){
     setAvailableQuestions();
     //Second set new question among available questions array
     getNewQuestion();
+    //Set score
+    scoreIndicator();
 }
 
-/***
- * Function to get questions from the array
- */

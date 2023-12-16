@@ -285,6 +285,25 @@ body {
     font-weight: 500;
 }
 
+.quiz-box .quiz-header .header-score div {
+    height: 30px;
+    width: 10px;
+    display: inline-block;
+    border: 2px solid #e7f5ff;
+    background-color: #cccccc;
+    margin-top: 15px;
+    border-radius: 10%;
+    align-items: space-between;
+}
+
+/*Style score indicator*/
+.quiz-box .quiz-header .header-score div.correct {
+    background-color: #06da8c;
+}
+.quiz-box .quiz-header .header-score div.wrong {
+    background-color: rgb(202, 34, 34);
+}
+
 .quiz-box .question-text {
     font-size: 24px;
     font-weight: 600;
