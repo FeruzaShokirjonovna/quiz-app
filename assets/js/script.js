@@ -61,18 +61,24 @@ function setAvailableQuestions() {
  */
 function getNewQuestion(){
     //set question number
-    questionNumber.innerHTML = "Question" + (questionCount +1) + "of 10";
+    questionNumber.innerHTML = "Question" + " "+ (questionCount + 1) + " " + "of 10";
     //set question text
     //randomize questions
     const questionIndex = availableQuestions[Math.floor(Math.random() * availableQuestions.length)];
     currentQuestion = questionIndex;
     questionText.innerHTML = currentQuestion.question;
+    //get the position of "questionIndex" from the questions array
+    const index1 = availableQuestions.indexOf(questionIndex);
+    //remove the question index, that is why once given question will not repeated
+    availableQuestions.splice(index1,1);
+    console.log(questionIndex);
+    console.log(availableQuestions);
     
     questionCount++
 }
 
 function next(){
-    if(questionCount === questions.length){
+    if(questionCount === 10){
         console.log("quiz over")
     }
     else{
