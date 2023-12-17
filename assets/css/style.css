@@ -285,6 +285,7 @@ body {
     font-weight: 500;
 }
 
+/*Style score indicator*/
 .quiz-box .quiz-header .header-score div {
     height: 30px;
     width: 10px;
@@ -296,7 +297,6 @@ body {
     align-items: space-between;
 }
 
-/*Style score indicator*/
 .quiz-box .quiz-header .header-score div.correct {
     background-color: #06da8c;
 }
