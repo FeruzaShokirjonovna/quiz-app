@@ -6,6 +6,7 @@ const continueBtn = document.querySelector('.info-btn-continue');
 const quizSection = document.querySelector('.quiz-section');
 const startBtn = document.querySelector('.start-btn')
 const quizBox = document.querySelector('.quiz-box')
+const homeBox = document.querySelector('.home-content');
 const resultBox = document.querySelector('.result-box')
 
 const questionText = document.querySelector('.question-text');
@@ -47,7 +48,7 @@ let currentQuestion;
 let availableQuestions = [];
 let availableOptions = [];
 let correctAnswers = 0;
-let attempts = 0;
+let attempt = 0;
 
 const nextBtn = document.querySelector('.next-btn')
 
@@ -123,7 +124,7 @@ function getResult(optionElement){
         //add mark to correct answer
         updateScoreIndicator('correct');
         correctAnswers++;
-        console.log("Correct: " + correctAnswers)
+        console.log("correct:" + correctAnswers)
     }
     else{
         //set red background color if it is wrong
@@ -138,7 +139,7 @@ function getResult(optionElement){
             }
         }
     }
-    attempts++;
+    attempt++;
     unclickableOptions();
 }
 
@@ -156,7 +157,7 @@ function unclickableOptions(){
  * Function to set score
  */
 function scoreIndicator() {
-    scoreIndicatorContainer.innerHTML = ' ';
+    scoreIndicatorContainer.innerHTML = '';
     const totalQuestion = 5;
     for(let i=0; i<totalQuestion; i++){
         const indicator = document.createElement('div');
@@ -168,24 +169,18 @@ function scoreIndicator() {
  * Function to update score indicator
  */
 function updateScoreIndicator(markType){
-    scoreIndicatorContainer.children[questionCount-1].classList.add(markType);
+    scoreIndicatorContainer.children[questionCount-1].classList.add(markType)
+
 }
 
 function next(){
     if(questionCount === 5){
         console.log("quiz over");
-        quizOver();
+        
     }
     else{
         getNewQuestion();
     } 
-}
-
-function quizOver(){
-    //hide quiz box
-    quizBox.classList.add('hide');
-    //show result box
-    resultBox.classList.remove('hide')
 }
 
 window.onload = function(){
@@ -193,7 +188,6 @@ window.onload = function(){
     setAvailableQuestions();
     //Second set new question among available questions array
     getNewQuestion();
-    //Set score indicator
+    //Set score
     scoreIndicator();
 }
-
