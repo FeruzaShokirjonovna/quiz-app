@@ -19,7 +19,7 @@ const scoreIndicatorContainer = document.querySelector('.header-score')
  */
 rulesBtn.onclick = () => {
     rulesInfo.classList.add('active');
-    main.classList.add('active');
+    main.classList.remove('active');
 }
 /***
  * Exit button removes Rules info
@@ -176,11 +176,31 @@ function updateScoreIndicator(markType){
 function next(){
     if(questionCount === 5){
         console.log("quiz over");
-        
+        quizOver();
     }
     else{
         getNewQuestion();
     } 
+}
+
+function quizOver(){
+    homeBox.classList.add('active');
+    quizSection.classList.remove('active');
+    resultBox.classList.add('active');
+    rulesInfo.classList.remove('active');
+    quizBox.classList.remove('active');
+    quizResult();
+}
+
+function quizResult(){
+    const questionAmount = 5;
+    resultBox.querySelector('.total-question').innerHTML= questionAmount;
+    resultBox.querySelector('.total-attempt').innerHTML=attempt;
+    resultBox.querySelector('.total-correct').innerHTML=correctAnswers;
+    resultBox.querySelector('.total-wrong').innerHTML=attempt-correctAnswers;
+    const percentage = (correctAnswers / questionAmount) * 100;
+    resultBox.querySelector('.total-question').innerHTML= percentage.toFixed(2) + "%";
+    resultBox.querySelector('.total-question').innerHTML= correctAnswers + " / " + 5;
 }
 
 window.onload = function(){

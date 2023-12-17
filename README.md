@@ -1,39 +1,136 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+## Table of Contents
 
-Welcome,
+- [UX](#ux "UX")
+  - [User Goals](#user-goals "User Goals")
+  - [User Stories](#user-stories "User Stories")
+  - [Site Owners Goals](#site-owners-goals)
+  - [User Requirements and Expectations](#user-requirements-and-expectations)
+    - [Requirements](#requirements)
+    - [Expectations](#expectations)
+  - [Design Choices](#design-choices)
+    - [Fonts](#fonts)
+    - [Icons](#icons)
+    - [Colors](#colors)
+    - [Structure](#structure)
+- [Wireframes](#wireframes)
+  - [Features](#features)
+    - [Welcome Page](#welcome-page)
+    - [Game Page](#game-page)
+    - [Results Page](#results-page)
+    - [Footer](#footer)
+    - [Features to be implemented](#features-to-be-implemented)
+- [Technologies used](#technologies-used)
+  - [Languages](#languages)
+  - [Tools](#tools)
+- [Testing](#testing)
+  - [Functionality Tests](#functionality-tests)
+  - [Error Handling Tests](#error-handling-tests)
+  - [Responsive Design Tests](#responsive-design-tests)
+  - [Performance Tests](#performance-tests)
+  - [General Tests](#general-tests)
+  - [Bugs](#bugs)
+  - [Fixed Bugs](#fixed-bugs)
+  - [Unfixed Bugs](#unfixed-bugs)
+- [Deployment](#deployment)
+- [Credits](#credits)
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+## UX
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
+### User Requirements and Expectations
 
-## Codeanywhere Reminders
+### User Goals
+[Back to Top](#table-of-contents)
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+### User Stories
+[Back to Top](#table-of-contents)
 
-`python3 -m http.server`
+### Site owners Goals
+[Back to Top](#table-of-contents)
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+### Requirements
+- User Authentication:
+  - Users are asked to insert a username.
+- Quiz Creation:
+  - The system should allow administrators to create quizzes with multiple-choice questions.
+- Mobile Responsiveness:
+  - The platform should be accessible and user-friendly on various devices, including desktop and mobile.
+- Performance:
+  - The system should respond to user interactions quickly, with minimal latency.
+- Compatibility:
+  - The platform should be compatible with major web browsers to accommodate a wide range of users.
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+[Back to Top](#table-of-contents)
 
-`http_server`
+### Expectations
+[Back to Top](#table-of-contents)
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+## Design Choices
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+### Fonts
+### Icons
+### Colors
+### Structure
+The website will follow a mobile-first strategy, the main target is to create a visually appealing design for smaller screens. As for the smallest design I chose Samsung Galaxy S8 and iPhone 5.
+[Back to Top](#table-of-contents)
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+## Wireframes
 
-To log into the Heroku toolbelt CLI:
+Wireframes were created using [Balsamic](https://balsamiq.com/wireframes/ "Balsamic") for visual structuring and layout planning, maintaining design consistency across devices.
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+[Back to Top](#table-of-contents)
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+## Features
 
----
+### Welcome Page
 
-Happy coding!
+## Game Page
+
+## Results Page
+
+### Footer
+
+### Features to be Implemented
+
+[Back to Top](#table-of-contents)
+
+## Technologies used
+
+### Languages
+
+- [HTML](https://en.wikipedia.org/wiki/HTML "HTML")
+- [CSS](https://en.wikipedia.org/wiki/CSS "CSS")
+- [Javascript](https://en.wikipedia.org/wiki/JavaScript "Javascript")
+
+### Libraries & Frameworks
+
+### Tools
+
+[Back to Top](#table-of-contents)
+
+## Testing
+
+### Functionality Tests
+
+### Error Handling Tests
+
+### Responsive Design Tests
+
+### Performance Tests
+
+### General Tests
+
+## Bugs
+
+## Fixed Bugs
+
+## Unfixed Bugs
+
+[Back to Top](#table-of-contents)
+
+## Deployment
+
+[Back to Top](#table-of-contents)
+
+### Credits
+
+[Back to Top](#table-of-contents)
