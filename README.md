@@ -37,7 +37,9 @@
 ## UX
 
 ### User Requirements and Expectations
-
+- The visitors wish to see readable texts to be able to concentrate on the game.
+- The visitors wish to have clear instructions to be able to start the game. They expect to see clear navigations and be able to use all the possible gadgets for this game. The letters should be easy to read and the game should show a clear sign of how many questions there are as well as keep a score for the right and wrong answers.
+- The users should have the chance to restart the game regardless if they lost it or won if they wish to get better results.
 ### User Goals
 [Back to Top](#table-of-contents)
 

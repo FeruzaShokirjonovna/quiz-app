@@ -14,7 +14,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-    
+
 
     <!-- Style sheets -->
     <link rel="stylesheet" href="assets/css/style.css">
@@ -25,7 +25,8 @@
     <main class="main">
         <!--Header-->
         <header class="header">
-            
+            <a href="index.html">Brain Ring</a>
+
         </header>
 
         <!--Home section-->
@@ -64,7 +65,7 @@
                         <td><span class="total-question"></span></td>
                     </tr>
                     <tr>
-                        <td>attempts</td>
+                        <td>Attempts</td>
                         <td><span class="total-attempt"></span></td>
                     </tr>
                     <tr>
@@ -85,8 +86,10 @@
                     </tr>
 
                 </table>
-                <button type="button" class="tryagain-btn" id="try-">Try Again</button>
-                <button type="button" class="home-btn">Home</button>
+                <div class="btn-group">
+                    <button type="button" class="tryagain-btn">Try Again</button>
+                    <button type="button" class="home-btn">Home</button>
+                </div>
             </div>
             <!--Welcome message section-->
             <section class="home">
@@ -107,9 +110,11 @@
             horizons.
         </p>
         <h3>How it works:</h3>
-        <span class="info">1. Enter <em>Start</em> and begin the Quiz</span>
-        <span class="info">2. Answer 10 questions</span>
-        <span class="info">3. Unleash the genius within you!</span>
+        <ol>
+            <li>Enter your name.</li>
+            <li>Click <em> Start </em> button</li>
+            <li>You have 5 questions to answer</li>
+        </ol>
         <div class="btn-group">
             <button class="info-btn-exit">Exit</button>
             <a href="#" class="info-btn-continue">Continue</a>

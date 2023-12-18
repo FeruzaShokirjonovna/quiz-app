@@ -139,8 +139,7 @@ body {
 }
 
 /* Style rules section*/
-.rules-info,
-result {
+.rules-info {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -148,7 +147,8 @@ result {
     max-width: 500px;
     background: snow;
     border-radius: 8px;
-    padding: 10px 25px;
+    padding: 30px;
+    margin: 40px auto;
     color: #666;
     opacity: 0;
     pointer-events: none;
@@ -162,7 +162,9 @@ result {
 }
 
 .rules-info h2 {
+    left: 50%;
     font-size: 50px;
+    align-items: center;
 }
 
 .rules-info p {
@@ -171,7 +173,6 @@ result {
     padding: 8px;
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 
 .rules-info .info {
@@ -181,21 +182,22 @@ result {
     margin: 4px 0;
 }
 
-/*Style of Buttons in Rules Info*/
-.rules-info .btn-group {
+/*Style of Buttons in Rules Info and Result Box*/
+.btn-group {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 12px;
 }
 
-.rules-info .btn-group .info-btn-continue {
+.btn-group .info-btn-continue {
     display: flex;
     justify-content: center;
     align-items: center;
     transition-duration: 0.4s;
-    width: 130px;
+    width: 100px;
     height: 45px;
+    margin: 20px;
     cursor: pointer;
     text-decoration: none;
     background-color: #06da8c;
@@ -206,18 +208,19 @@ result {
     border-radius: 8px;
 }
 
-.rules-info .btn-group .info-btn-continue:hover {
+.btn-group .info-btn-continue:hover {
     background-color: #04AA6D;
     color: white;
 }
 
-.rules-info .btn-group .info-btn-exit {
+.btn-group .info-btn-exit {
     display: flex;
     justify-content: center;
     align-items: center;
     transition-duration: 0.4s;
-    width: 130px;
+    width: 100px;
     height: 45px;
+    margin: 20px;
     text-decoration: none;
     cursor: pointer;
     background-color: rgb(177, 175, 175);
@@ -228,7 +231,7 @@ result {
     border-radius: 8px;
 }
 
-.rules-info .btn-group .info-btn-exit:hover {
+.btn-group .info-btn-exit:hover {
     background-color: gainsboro;
     /* Green */
     color: white;
@@ -268,9 +271,7 @@ result {
     -webkit-box-shadow: 0px 5px 15px 3px rgba(0, 0, 0, 0.93);
     box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.93);
 }
-.quiz-box.active {
-    left
-}
+
 .quiz-box h1 {
     font-size: 32px;
     text-align: center;
@@ -434,9 +435,9 @@ result {
     background: snow;
     border-radius: 8px;
     padding: 10px 25px;
-    color: #666;
+    color: #292828;
     opacity: 0;
-    pointer-events: none;
+    pointer-events: auto;
     transition: .3s ease;
 }
 

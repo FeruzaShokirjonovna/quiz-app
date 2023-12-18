@@ -13,13 +13,14 @@ const questionText = document.querySelector('.question-text');
 const questionNumber = document.querySelector('.question-number')
 const optionsList = document.querySelector('.options-list')
 const scoreIndicatorContainer = document.querySelector('.header-score')
+const tryAgainBtn = document.querySelector('.tryagain-btn');
 
 /***
  * Rules info activates when the rules button clicked
  */
 rulesBtn.onclick = () => {
     rulesInfo.classList.add('active');
-    main.classList.remove('active');
+    main.classList.add('active');
 }
 /***
  * Exit button removes Rules info
@@ -41,6 +42,14 @@ startBtn.onclick = () => {
     rulesInfo.classList.remove('active');
     main.classList.remove('active');
     quizBox.classList.add('active');
+    startQuiz();
+}
+
+tryAgainBtn.onclick = () => {
+    resultBox.classList.remove('active');
+    quizSection.classList.add('active');
+    quizBox.classList.add('active');
+    resetQuiz();
 }
 
 let questionCount = 0;
@@ -183,6 +192,9 @@ function next(){
     } 
 }
 
+/***
+ * Function to finish the quiz
+ */
 function quizOver(){
     homeBox.classList.add('active');
     quizSection.classList.remove('active');
@@ -192,18 +204,29 @@ function quizOver(){
     quizResult();
 }
 
+/***
+ * Function to get the user result 
+ */
 function quizResult(){
-    const questionAmount = 5;
-    resultBox.querySelector('.total-question').innerHTML= questionAmount;
+    const totalQuestion = 5;
+    resultBox.querySelector('.total-question').innerHTML= totalQuestion;
     resultBox.querySelector('.total-attempt').innerHTML=attempt;
     resultBox.querySelector('.total-correct').innerHTML=correctAnswers;
     resultBox.querySelector('.total-wrong').innerHTML=attempt-correctAnswers;
-    const percentage = (correctAnswers / questionAmount) * 100;
-    resultBox.querySelector('.total-question').innerHTML= percentage.toFixed(2) + "%";
-    resultBox.querySelector('.total-question').innerHTML= correctAnswers + " / " + 5;
+    const percentage = (correctAnswers / totalQuestion) * 100;
+    resultBox.querySelector('.percentage').innerHTML= percentage.toFixed(2) + "%";
+    resultBox.querySelector('.total-score').innerHTML= correctAnswers + " / " + 5;
 }
 
-window.onload = function(){
+function resetQuiz(){
+    correctAnswers=0;
+    attempt=0;
+    questionCount=0;
+    startQuiz();
+}
+
+
+function startQuiz(){
     //Set all questions in availableQuestions Array first
     setAvailableQuestions();
     //Second set new question among available questions array
