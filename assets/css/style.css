@@ -529,3 +529,29 @@ body {
     background-color: gainsboro;
     color: white;
 }
+
+/* Style 404 error page */
+#error-page {
+    background-color: rgba(218, 228, 232, 0.9);
+    padding: 30px;
+    border-radius: 30px;
+    margin: 32px 20px;
+    animation: slide-right 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+#error-page h1 {
+    padding-bottom: 15px;
+    text-align: center;
+
+}
+
+#error-page p {
+    font-size: 25px;
+    text-align: center;
+}
+
+#error-page a {
+    color: inherit;
+    font-size: 15px;
+    font-style: oblique;
+}
