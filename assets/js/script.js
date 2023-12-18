@@ -14,6 +14,7 @@ const questionNumber = document.querySelector('.question-number')
 const optionsList = document.querySelector('.options-list')
 const scoreIndicatorContainer = document.querySelector('.header-score')
 const tryAgainBtn = document.querySelector('.tryagain-btn');
+const homeBtn = document.querySelector('.home-btn')
 
 /***
  * Rules info activates when the rules button clicked
@@ -35,6 +36,7 @@ continueBtn.onclick = () => {
     rulesInfo.classList.remove('active');
     main.classList.remove('active');
     quizBox.classList.add('active');
+    startQuiz();
 }
 
 startBtn.onclick = () => {
@@ -49,6 +51,7 @@ tryAgainBtn.onclick = () => {
     resultBox.classList.remove('active');
     quizSection.classList.add('active');
     quizBox.classList.add('active');
+    main.classList.remove('active');
     resetQuiz();
 }
 

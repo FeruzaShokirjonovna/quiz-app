@@ -62,7 +62,7 @@ body {
 }
 
 .home-content.active {
-    filter: blur(12px);
+    filter: blur(60px);
     pointer-events: none;
 }
 
@@ -233,7 +233,6 @@ body {
 
 .btn-group .info-btn-exit:hover {
     background-color: gainsboro;
-    /* Green */
     color: white;
 }
 
@@ -447,4 +446,86 @@ body {
     transform: translate(-50%, -50%) scale(1);
 }
 
+/*Style Result section*/
+.result-box {
+    text-align: center;
+    opacity: 0;
+    background-color: green;
+    pointer-events: none;
+}
 
+.result-box.active {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+
+.result-box h1 {
+    font-size: 36px;
+    line-height: 42px;
+    color: white;
+}
+
+.result-box table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+}
+
+.result-box table td {
+    border: 1px solid whitesmoke;
+    padding: 10px 15px;
+    font-weight: 500;
+    color: #fff;
+    width: 50%;
+    text-align: left;
+    font-size: 18px;
+}
+
+/*Style buttons in result section*/
+.tryagain-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.4s;
+    width: 100px;
+    height: 45px;
+    margin: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: #06da8c;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    outline: none;
+    border-radius: 8px;
+}
+
+.tryagain-btn:hover{
+    background-color: #04AA6D;
+    color: white;
+}
+
+.btn-group .home-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.4s;
+    width: 100px;
+    height: 45px;
+    margin: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: rgb(177, 175, 175);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    outline: none;
+    border-radius: 8px;
+}
+
+.btn-group .home-btn:hover {
+    background-color: gainsboro;
+    color: white;
+}
