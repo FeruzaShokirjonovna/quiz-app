@@ -11,7 +11,8 @@
 
 body {
     color: white;
-    overflow-y: scroll;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 .header {
@@ -24,6 +25,12 @@ body {
     z-index: 100;
 }
 
+.header a {
+    font-size: 25px;
+    font-weight: 600;
+    text-decoration: none;
+    z-index: 99;
+}
 .main {
     min-height: 100vh;
     background-color: #e5dbff;
@@ -440,9 +447,9 @@ body {
     padding: 10px 25px;
     color: white;
     opacity: 0;
-    pointer-events: auto;
     transition: .3s ease;
     align-items: center;
+    pointer-events: auto;
 }
 
 .result-box.active {
@@ -491,6 +498,7 @@ body {
     font-weight: 600;
     outline: none;
     border-radius: 8px;
+    pointer-events: auto;
 }
 
 .tryagain-btn:hover {
@@ -514,6 +522,7 @@ body {
     font-weight: 600;
     outline: none;
     border-radius: 8px;
+    pointer-events: auto;
 }
 
 .btn-group .home-btn:hover {
@@ -553,6 +562,10 @@ body {
         max-width: 600px;
     }
     
+    .header a {
+        font-size: 40px;
+    }
+
     /*Make title bigger*/
     .home-content h1 {
         font-size: 58px;
@@ -596,6 +609,12 @@ body {
 
 /* Media query: Tablets and larger (992px and bigger)*/
 @media screen and (min-width: 992px) {
+    .header a {
+        font-size: 60px;
+        margin: 40px;
+        font-weight: 600;
+    }
+
     .rules-info h2 {
         font-size: 50px;
     }
