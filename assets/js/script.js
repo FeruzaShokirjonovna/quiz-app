@@ -1,10 +1,24 @@
+// Inside this function, the DOM is fully loaded
+document.addEventListener('DOMContentLoaded', function () {
+    const nameInput = document.getElementById('name-input');
+    nameInput.focus();
 
+    tryAgainBtn.addEventListener('click', clickedButtonHandler);
+
+    function clickedButtonHandler(event) {
+        const clickedButton = event.target;
+
+        if (clickedButton === tryAgainBtn) {
+            resetQuiz();
+        }
+    }
+});
+ 
 // Global variables to access from more than 1 functions
 const rulesBtn = document.querySelector('.rules-btn');
 const rulesInfo = document.querySelector('.rules-info');
 const exitBtn = document.querySelector('.info-btn-exit');
 const main = document.querySelector('.main');
-const continueBtn = document.querySelector('.info-btn-continue');
 const quizSection = document.querySelector('.quiz-section');
 const startBtn = document.querySelector('.start-btn')
 const quizBox = document.querySelector('.quiz-box')
@@ -16,11 +30,12 @@ const questionNumber = document.querySelector('.question-number')
 const optionsList = document.querySelector('.options-list')
 const scoreIndicatorContainer = document.querySelector('.header-score')
 const tryAgainBtn = document.querySelector('.tryagain-btn');
-const homeBtn = document.querySelector('.home-btn')
+const homeBtn = document.querySelector('.home-btn');
+const scoreMessageRef = document.querySelector("#score-message");
 
 
 /***
- * Event listeners to access
+ * Event listeners to access all buttons
  */
 
 // Rules info activates when the rules button clicked
@@ -35,28 +50,12 @@ exitBtn.onclick = () => {
     main.classList.remove('active');
 }
 
-continueBtn.onclick = () => {
-    quizSection.classList.add('active');
-    rulesInfo.classList.remove('active');
-    main.classList.remove('active');
-    quizBox.classList.add('active');
-    startQuiz();
-}
-
 startBtn.onclick = () => {
     quizSection.classList.add('active');
     rulesInfo.classList.remove('active');
     main.classList.remove('active');
     quizBox.classList.add('active');
-    startQuiz();
-}
-
-tryAgainBtn.onclick = () => {
-    resultBox.classList.remove('active');
-    quizSection.classList.add('active');
-    quizBox.classList.add('active');
-    main.classList.remove('active');
-    resetQuiz();
+    startQuiz(username);
 }
 
 let questionCount = 0;
@@ -67,19 +66,16 @@ let correctAnswers = 0;
 let attempt = 0;
 
 const nextBtn = document.querySelector('.next-btn')
-
+const username = document.querySelector("#name-input").value;
 /**
  * Checking if the input is empty, to throw an alert
  */
-function checkUserInput() {
-    const nameInput = document.getElementById('name-input');
-    if (nameInput) {
-        if (nameInput.value.trim() === '') {
-            alert('Please enter your name');
-        } else {
-            startGame();
-        }
+const checkUsername = (username) => {
+    if (!username) {
+        alert("Please enter a username.");
+        return false;
     }
+    return true;
 }
 
 
@@ -231,6 +227,7 @@ function quizOver(){
  */
 function quizResult(){
     const totalQuestion = 5;
+
     resultBox.querySelector('.total-question').innerHTML= totalQuestion;
     resultBox.querySelector('.total-attempt').innerHTML=attempt;
     resultBox.querySelector('.total-correct').innerHTML=correctAnswers;
@@ -240,17 +237,22 @@ function quizResult(){
     resultBox.querySelector('.total-score').innerHTML= correctAnswers + " / " + 5;
 }
 
+/***
+ * Function to restart the quiz
+ */
 function resetQuiz(){
     correctAnswers=0;
     attempt=0;
     questionCount=0;
-    startQuiz();
+    startQuiz(username);
 }
 
-
-function startQuiz(){
+/***
+ * Function to start the game
+ */
+function startQuiz(username){
     // Check if the username is valid
-    checkUserInput();
+    checkUsername();
     //Set all questions in availableQuestions Array first
     setAvailableQuestions();
     //Second set new question among available questions array
@@ -258,3 +260,4 @@ function startQuiz(){
     //Set score
     scoreIndicator();
 }
+

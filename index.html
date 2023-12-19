@@ -37,7 +37,7 @@
                 <div class="quiz-box">
                     <h1>Brain Ring</h1>
                     <div class="quiz-header">
-                        <span class="header-timer">Time: 30</span>
+                        
                         <div class="header-score"></div>
                     </div>
 
@@ -58,6 +58,8 @@
 
             <!--Result section-->
             <div class="result-box">
+                <div class="wrapper hidden" id="score-wrapper">
+                    <p id="score-message"></p></div>
                 <h1>Result</h1>
                 <table>
                     <tr>
@@ -86,8 +88,8 @@
                     </tr>
                 </table>
                 <div class="btn-group">
-                    <button type="button" class="tryagain-btn">Try Again</button>
-                    <button type="button" class="home-btn">Home</button>
+                    <button class="tryagain-btn">Try Again</button>
+                    <button class="home-btn">Home</button>
                 </div>
             </div>
             <!--Welcome message section-->
@@ -98,9 +100,9 @@
                     <label for="name-input" class="your-name"><i class="fa-solid fa-user-graduate"></i> Enter Your
                         Name</label>
                     <br />
-                    <input type="text" placeholder="Enter your Name" id="name-input" name="name-input" />
-                    <div class="oops-message"></div>
-                    <button class="start-btn">Start Quiz</button>
+                    <input type="text" placeholder="Enter your Name" id="name-input" name="name-input" required/>
+                
+                    <button class="start-btn">Start</button>
                     <button class="rules-btn" id="rules-btn">Rules</button>
                 </div>
             </section>
@@ -123,7 +125,6 @@
         </ol>
         <div class="btn-group">
             <button class="info-btn-exit">Exit</button>
-            <a href="#" class="info-btn-continue">Continue</a>
         </div>
     </div>
     <!--Font awesome kit-->

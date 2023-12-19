@@ -11,7 +11,7 @@
 
 body {
     color: white;
-    overflow: hidden;
+    overflow-y: scroll;
 }
 
 .header {
@@ -32,14 +32,14 @@ body {
 }
 
 .main.active {
-    filter: blur(12px);
+    filter: blur(50px);
     pointer-events: none;
 }
 
 /*Home section*/
 .container {
     display: flex;
-    height: 100vh;
+    min-height: 100vh;
     width: 200%;
 }
 
@@ -99,8 +99,8 @@ body {
 /* Style the input */
 #name-input {
     height: 40px;
-    width: 100%;
-    margin: 15px;
+    width: 80%;
+    margin: 20px;
     padding: 5px;
     border: 1px solid rgb(223, 230, 235);
     border-radius: 10px;
@@ -110,7 +110,7 @@ body {
 
 /* "pressed" effect on click customized from https://www.w3schools.com/css/css3_buttons.asp */
 .start-btn {
-    width: 190px;
+    width: 100px;
     height: 55px;
     display: inline-block;
     padding: 15px 25px;
@@ -137,7 +137,7 @@ body {
 }
 
 .rules-btn {
-    width: 190px;
+    width: 100px;
     height: 55px;
     display: inline-block;
     padding: 15px 25px;
@@ -208,34 +208,11 @@ body {
     margin: 4px;
 }
 
-/*Style of Buttons in Rules Info and Result Box*/
+/*Style of Buttons in Rules Info*/
 .btn-group {
     display: block;
     align-items: center;
     margin-top: 12px;
-}
-
-.btn-group .info-btn-continue {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition-duration: 0.4s;
-    width: 100px;
-    height: 45px;
-    margin: 20px;
-    cursor: pointer;
-    text-decoration: none;
-    background-color: #06da8c;
-    color: white;
-    font-size: 16px;
-    font-weight: 600;
-    outline: none;
-    border-radius: 8px;
-}
-
-.btn-group .info-btn-continue:hover {
-    background-color: #04AA6D;
-    color: white;
 }
 
 .btn-group .info-btn-exit {
@@ -283,7 +260,7 @@ body {
 
 .quiz-section .quiz-box {
     position: relative;
-    max-width: 90%;
+    width: 90%;
     background: transparent;
     border: 2px solid #19523d;
     border-radius: 6px;
@@ -400,7 +377,7 @@ body {
     align-items: center;
     padding-top: 20px;
     border-top: 2px solid #19523d;
-    margin-top: ;
+    
 }
 
 .quiz-footer .question-amount {
@@ -458,10 +435,10 @@ body {
     left: 50%;
     transform: translate(-50%, -50%) scale(.9);
     max-width: 500px;
-    background: green;
+    background: #5d498f;
     border-radius: 8px;
     padding: 10px 25px;
-    color: #292828;
+    color: white;
     opacity: 0;
     pointer-events: auto;
     transition: .3s ease;
@@ -477,7 +454,7 @@ body {
 .result-box h1 {
     font-size: 36px;
     line-height: 42px;
-    color: white;
+    
 }
 
 .result-box table {
@@ -488,10 +465,10 @@ body {
 }
 
 .result-box table td {
-    border: 1px solid whitesmoke;
+    border: 1px solid white;
     padding: 10px 15px;
-    font-weight: 500;
-    color: #fff;
+    font-weight: 600;
+    color: white;
     width: 50%;
     text-align: center;
     font-size: 18px;
@@ -584,6 +561,11 @@ body {
     .home-content p {
         font-size: 25px;
         line-height: 40px;
+    }
+
+    .rules-btn,
+    .start-btn {
+        width: 190px;
     }
 
     /*Make name input bigger*/
