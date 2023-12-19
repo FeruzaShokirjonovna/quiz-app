@@ -164,7 +164,7 @@ body {
 .rules-info h2 {
     left: 50%;
     font-size: 50px;
-    align-items: center;
+    text-align: center;
 }
 
 .rules-info p {
@@ -172,20 +172,19 @@ body {
     margin: 4px;
     padding: 8px;
     display: flex;
-    align-items: center;
+    text-align: center;
+    font-weight: 500;
 }
 
 .rules-info .info {
-    display: inline-block;
     font-size: 16px;
     font-weight: 500;
-    margin: 4px 0;
+    margin: 4px;
 }
 
 /*Style of Buttons in Rules Info and Result Box*/
 .btn-group {
-    display: flex;
-    justify-content: space-between;
+    display: block;
     align-items: center;
     margin-top: 12px;
 }
@@ -430,14 +429,15 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(.9);
-    width: 500px;
-    background: snow;
+    max-width: 500px;
+    background: green;
     border-radius: 8px;
     padding: 10px 25px;
     color: #292828;
     opacity: 0;
     pointer-events: auto;
     transition: .3s ease;
+    align-items: center;
 }
 
 .result-box.active {
@@ -445,21 +445,6 @@ body {
     pointer-events: auto;
     transform: translate(-50%, -50%) scale(1);
 }
-
-/*Style Result section*/
-.result-box {
-    text-align: center;
-    opacity: 0;
-    background-color: green;
-    pointer-events: none;
-}
-
-.result-box.active {
-    opacity: 1;
-    pointer-events: auto;
-    transform: translate(-50%, -50%) scale(1);
-}
-
 
 .result-box h1 {
     font-size: 36px;
@@ -468,7 +453,8 @@ body {
 }
 
 .result-box table {
-    width: 100%;
+    align-items: center;
+    width: 50%;
     border-collapse: collapse;
     margin: 30px 0;
 }
@@ -479,7 +465,7 @@ body {
     font-weight: 500;
     color: #fff;
     width: 50%;
-    text-align: left;
+    text-align: center;
     font-size: 18px;
 }
 
@@ -554,4 +540,18 @@ body {
     color: inherit;
     font-size: 15px;
     font-style: oblique;
+}
+
+/* Media query: Tablets and larger (768px and bigger)*/
+@media screen and (min-width: 768px) {
+    /*Make buttons in row*/
+    .btn-group {
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    .result-box table {
+        width: 100%;
+    }
 }

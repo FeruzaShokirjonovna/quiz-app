@@ -1,3 +1,16 @@
+// Inside this function, the DOM is fully loaded
+document.addEventListener('DOMContentLoaded', function () {
+    // Variables for buttons to add event listeners
+    const rulesBtn = document.querySelector('.rules-btn');
+    const exitBtn = document.querySelector('.info-btn-exit');
+    const continueBtn = document.querySelector('.info-btn-continue');
+    const startBtn = document.querySelector('.start-btn');
+    const tryAgainBtn = document.querySelector('.tryagain-btn');
+    const homeBtn = document.querySelector('.home-btn')
+
+});
+
+// Global variables to access from more than 1 functions
 const rulesBtn = document.querySelector('.rules-btn');
 const rulesInfo = document.querySelector('.rules-info');
 const exitBtn = document.querySelector('.info-btn-exit');
