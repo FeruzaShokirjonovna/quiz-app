@@ -10,7 +10,7 @@ const startBtn = document.querySelector('.start-btn')
 const quizBox = document.querySelector('.quiz-box')
 const homeBox = document.querySelector('.home-content');
 const resultBox = document.querySelector('.result-box')
-
+const nameInput = document.getElementById('name-input');
 const questionText = document.querySelector('.question-text');
 const questionNumber = document.querySelector('.question-number')
 const optionsList = document.querySelector('.options-list')
@@ -67,6 +67,21 @@ let correctAnswers = 0;
 let attempt = 0;
 
 const nextBtn = document.querySelector('.next-btn')
+
+/**
+ * Checking if the input is empty, to throw an alert
+ */
+function checkUserInput() {
+    const nameInput = document.getElementById('name-input');
+    if (nameInput) {
+        if (nameInput.value.trim() === '') {
+            alert('Please enter your name');
+        } else {
+            startGame();
+        }
+    }
+}
+
 
 /***
  * Function to push questions into availableQuestions
@@ -234,6 +249,8 @@ function resetQuiz(){
 
 
 function startQuiz(){
+    // Check if the username is valid
+    checkUserInput();
     //Set all questions in availableQuestions Array first
     setAvailableQuestions();
     //Second set new question among available questions array

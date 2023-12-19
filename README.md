@@ -41,12 +41,31 @@
 - The visitors wish to have clear instructions to be able to start the game. They expect to see clear navigations and be able to use all the possible gadgets for this game. The letters should be easy to read and the game should show a clear sign of how many questions there are as well as keep a score for the right and wrong answers.
 - The users should have the chance to restart the game regardless if they lost it or won if they wish to get better results.
 ### User Goals
+- Test and improve knowledge:
+  - Users may aim to test their current knowledge on various topics.
+  - Users may want to improve their understanding of specific areas within the science.
+- Compete and Challange:
+  - Users might seek the thrill of competition and challenge, trying to achieve high scores or compete against others.
+  - Users might want to share their quiz results on social media or challenge their friends to beat their scores.
+- Learn in an Engaging Way:
+  - Users could be looking for an engaging and interactive way to learn.
+- Enjoy a Relaxing Break
+  - Some users may use the quiz as a way to take a break and unwind.
+
 [Back to Top](#table-of-contents)
 
 ### User Stories
 [Back to Top](#table-of-contents)
 
 ### Site owners Goals
+- To create a quiz that covers a wide variety of subjects.
+- Increase User Engagement
+  - Increase the average time users spend on the platform.
+- Boost User Retention:
+  - Encourage users to return to the platform regularly.
+- Enhance Content Quality:
+  - Provide high-quality and diverse quiz content to keep users engaged.
+
 [Back to Top](#table-of-contents)
 
 ### Requirements
@@ -64,12 +83,23 @@
 [Back to Top](#table-of-contents)
 
 ### Expectations
+- Platform Accessibility:
+  - Users expect the platform to be accessible on various devices, ensuring a consistent and user-friendly experience, whether on desktop or mobile.
+- Engaging Quiz Content:
+  - Users look forward to diverse and high-quality quiz content, covering a range of topics.
+- Immediate Feedback:
+  - Users anticipate immediate feedback on quiz questions, with clear explanations for correct and incorrect answers, enhancing the learning experience.
+- Intuitive User Interface:
+  - Users anticipate a user-friendly and visually appealing interface that is easy to navigate, contributing to an enjoyable overall experience.
+
 [Back to Top](#table-of-contents)
 
 ## Design Choices
 
 ### Fonts
 ### Icons
+As for icons I decided to use for my website [Font Awesome library](https://fontawesome.com/ "Font Awesome").
+ 
 ### Colors
 ### Structure
 The website will follow a mobile-first strategy, the main target is to create a visually appealing design for smaller screens. As for the smallest design I chose Samsung Galaxy S8 and iPhone 5.

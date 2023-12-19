@@ -84,7 +84,6 @@
                         <td>Your Final Score</td>
                         <td><span class="total-score"></span></td>
                     </tr>
-
                 </table>
                 <div class="btn-group">
                     <button type="button" class="tryagain-btn">Try Again</button>
@@ -100,6 +99,7 @@
                         Name</label>
                     <br />
                     <input type="text" placeholder="Enter your Name" id="name-input" name="name-input" />
+                    <div class="oops-message"></div>
                     <button class="start-btn">Start Quiz</button>
                     <button class="rules-btn" id="rules-btn">Rules</button>
                 </div>
@@ -117,7 +117,9 @@
         <ol class="info">
             <li>Enter your name.</li>
             <li>Click <em> Start </em> button</li>
-            <li>You have 5 questions to answer</li>
+            <li>You have may skip the question, pressing next button, but this effects your overall result negatively </li>
+            <li>Once an answer is selected, the correct answer will turn green.</li>
+            <li>Answer all 10 questions to finish quiz</li>
         </ol>
         <div class="btn-group">
             <button class="info-btn-exit">Exit</button>
