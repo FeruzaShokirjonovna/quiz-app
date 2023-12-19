@@ -1,14 +1,3 @@
-// Inside this function, the DOM is fully loaded
-document.addEventListener('DOMContentLoaded', function () {
-    // Variables for buttons to add event listeners
-    const rulesBtn = document.querySelector('.rules-btn');
-    const exitBtn = document.querySelector('.info-btn-exit');
-    const continueBtn = document.querySelector('.info-btn-continue');
-    const startBtn = document.querySelector('.start-btn');
-    const tryAgainBtn = document.querySelector('.tryagain-btn');
-    const homeBtn = document.querySelector('.home-btn')
-
-});
 
 // Global variables to access from more than 1 functions
 const rulesBtn = document.querySelector('.rules-btn');
@@ -29,16 +18,18 @@ const scoreIndicatorContainer = document.querySelector('.header-score')
 const tryAgainBtn = document.querySelector('.tryagain-btn');
 const homeBtn = document.querySelector('.home-btn')
 
+
 /***
- * Rules info activates when the rules button clicked
+ * Event listeners to access
  */
+
+// Rules info activates when the rules button clicked
 rulesBtn.onclick = () => {
     rulesInfo.classList.add('active');
     main.classList.add('active');
 }
-/***
- * Exit button removes Rules info
- */
+
+// Exit button removes Rules info
 exitBtn.onclick = () => {
     rulesInfo.classList.remove('active');
     main.classList.remove('active');

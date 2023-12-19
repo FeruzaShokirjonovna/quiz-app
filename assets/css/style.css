@@ -71,16 +71,42 @@ body {
     font-size: 16px;
     text-align: center;
     line-height: 22px;
-    font-weight: 400;
+    font-weight: 500;
     padding: 20px;
     margin: 20px;
 }
 
 .home-content h1 {
     text-align: center;
-    font-size: 58px;
+    font-size: 32px;
     text-shadow: 0 0 10px rgba(0 0 0 .2);
 }
+
+/* Style the label of the name input */
+.your-name {
+    font-size: 18px;
+    color: inherit;
+    display: flex;
+    justify-content: center;
+}
+
+/* Add margin to the icon to look nicer */
+.your-name>i {
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+/* Style the input */
+#name-input {
+    height: 40px;
+    width: 100%;
+    margin: 15px;
+    padding: 5px;
+    border: 1px solid rgb(223, 230, 235);
+    border-radius: 10px;
+    background-color: white;
+}
+
 
 /* "pressed" effect on click customized from https://www.w3schools.com/css/css3_buttons.asp */
 .start-btn {
@@ -544,6 +570,28 @@ body {
 
 /* Media query: Tablets and larger (768px and bigger)*/
 @media screen and (min-width: 768px) {
+    /*Make title bigger*/
+    .home-content h1 {
+        font-size: 58px;
+    }
+    .home-content p {
+        font-size: 25px;
+        line-height: 40px;
+    }
+    /*Make name input bigger*/
+    .your-name {
+        font-size: 32px;
+    }
+
+    #name-input {
+        height: 60px;
+        width: 80%;
+        font-size: 15px;
+        margin: 2px 10%;
+        padding: 8px;
+        margin-bottom: 25px;
+    }
+
     /*Make buttons in row*/
     .btn-group {
         display: flex;
