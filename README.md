@@ -135,16 +135,26 @@ The website will follow a mobile-first strategy, the main target is to create a 
 
 ### Welcome Page
 
-- The welcome page serves as an introduction to the game, providing essential details about the rules and mechanics. Rules can be seen by pressing the Rules button.
+- The welcome page serves as an introduction to the game, providing essential details about the rules and mechanics. 
+- In every page There is Home link, which leads to Home Page.
+- Rules can be seen by pressing the Rules button.
 - The user enters there a username, i not there is alert message "Please enter your name".
 
  Mobile View:
 
-![Mobile View]
+![Mobile View](assets/images/home-page-mobile.jpg)
+
+Tablet View:
+
+![Tablet View](assets/images/Home-page-tablet.png)
 
 Desktop View:
 
 ![Desktop View](assets/images/Home-page.png)
+
+Rules Info:
+
+![Rules Info](assets/images/rules.png)
 
 ### Game Page
 
@@ -152,18 +162,32 @@ Desktop View:
 - The interface is designed for intuitive navigation, with interactive elements for selecting answers.
 - Visual feedback, such as highlighting correct and incorrect choices and score indicator, enhances the gaming experience.
 - Users have an option of skipping question if they don't know the answer, however this affects their overall result.
+- Score Indicator style varies due to screen sizes.
 
 Mobile View:
 
-![Mobile View](assets/images/quiz-page.png)
+![Mobile View](assets/images/quiz-page-mobile.jpg)
+
+Tablet View:
+
+![Tablet View](assets/images/quiz-page-tablet.png)
+
+Desktop View:
+
+![Desktop View](assets/images/quiz-page.png)
 
 ### Results Page
 
 - Upon completing the quiz, the results page displays the user's performance. A detailed summary includes the number of correct and incorrect answers.
+- Clicking Try Again button a user has a chance of play again the quiz.
 
  Mobile View:
 
-![Mobile View]
+![Mobile View](assets/images/result-page-mobile.jpg)
+
+Tablet View:
+
+![Tablet View](assets/images/result-page-tablet.png)
 
 Desktop View:
 
@@ -279,6 +303,8 @@ This was an oversight from the development phase when the font size was being mo
 
 ## Unfixed Bugs
 
+There is no unfixed bugs.
+
 [Back to Top](#table-of-contents)
 
 ## Deployment
@@ -315,7 +341,8 @@ Questions are written by myself.
 - CSS
 Start and Rules "pressed" Button styles are customized from [W3scools](https://www.w3schools.com/css/css3_buttons.asp)
 
-- Javascript
+- Javascript:
+- Inspired by Love Math Project
 - Inspired by [You Tube Tutorial](https://youtu.be/LJ4PZ8JnRCg?si=WmTnFSNYpJCSLI95)
 - For making questions and options given randomly [GeeksForGeeks](https://www.geeksforgeeks.org/random-string-generator-using-javascript/)
 - To add pointer events to buttons guided John fron Tutor Support 

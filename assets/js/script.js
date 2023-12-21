@@ -44,9 +44,8 @@ function clickedButtonHandler(event) {
             // If not empty, start the quiz
             quizSection.classList.add('active');
             rulesInfo.classList.remove('active');
-            
             quizBox.classList.add('active');
-            startQuiz(username);
+            startQuiz();
         }
     }
     // Rules info activates when the rules button clicked
@@ -75,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let availableQuestions = [];
     let availableOptions = [];
     let correctAnswers = 0;
-    const totalQuestion = 5;
+    const totalQuestion = 10;
     let attempt = 0;
 
     const nextBtn = document.querySelector('.next-btn');
@@ -98,7 +97,7 @@ document.addEventListener('DOMContentLoaded', function () {
      */
     function getNewQuestion() {
         //set question number
-        questionNumber.innerHTML = "Question" + " " + (questionCount + 1) + " " + "of 5";
+        questionNumber.innerHTML = "Question" + " " + (questionCount + 1) + " " + "of " + totalQuestion;
         //set question text
         //randomize questions
         const questionIndex = availableQuestions[Math.floor(Math.random() * availableQuestions.length)];
@@ -209,7 +208,7 @@ document.addEventListener('DOMContentLoaded', function () {
      * if questions are over, finishes quiz 
      */
     function next() {
-        if (questionCount === 5) {
+        if (questionCount === totalQuestion) {
             console.log("quiz over");
             questionCount = 0; // Reset question count
             quizOver();
@@ -237,14 +236,14 @@ document.addEventListener('DOMContentLoaded', function () {
      * Function to get the user result 
      */
     function quizResult() {
-        //scoreMessageRef.innerHTML = "Quiz is over. Here is your result";
+        
         resultBox.querySelector('.total-question').innerHTML = totalQuestion;
         resultBox.querySelector('.total-attempt').innerHTML = attempt;
         resultBox.querySelector('.total-correct').innerHTML = correctAnswers;
         resultBox.querySelector('.total-wrong').innerHTML = attempt - correctAnswers;
         const percentage = (correctAnswers / totalQuestion) * 100;
         resultBox.querySelector('.percentage').innerHTML = percentage.toFixed(2) + "%";
-        resultBox.querySelector('.total-score').innerHTML = correctAnswers + " / " + 5;
+        resultBox.querySelector('.total-score').innerHTML = correctAnswers + " / " + totalQuestion;
     }
 
     /***
