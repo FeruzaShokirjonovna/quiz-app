@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let attempt = 0;
 
     const nextBtn = document.querySelector('.next-btn');
-    const username = document.querySelector("#name-input").value;
+    
 
 //Inspired by https://youtu.be/LJ4PZ8JnRCg?si=WmTnFSNYpJCSLI95    
 

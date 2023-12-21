@@ -21,18 +21,17 @@ body {
     width: 100%;
     padding: 20px 10px;
     background: transparent;
-    z-index: 300;
 }
 
 .header a {
     font-size: 25px;
     font-weight: 600;
     text-decoration: none;
-    z-index: 99;
+    /*z-index: 99;*/
 }
 
 .main {
-    min-height: 100vh;
+    min-height: 100%;
     background-color: #e5dbff;
     transition: .3s ease;
 
