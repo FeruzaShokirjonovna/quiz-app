@@ -15,7 +15,7 @@ const optionsList = document.querySelector('.options-list')
 const scoreIndicatorContainer = document.querySelector('.header-score')
 const tryAgainBtn = document.querySelector('.tryagain-btn');
 const homeBtn = document.querySelector('.home-btn');
-const scoreMessageRef = document.querySelector("#score-message");
+const scoreMessageRef = document.querySelector(".score-message");
 
 
 rulesBtn.addEventListener('click', clickedButtonHandler);
@@ -32,13 +32,13 @@ function clickedButtonHandler(event) {
     }
 
     if (clickedButton === homeBtn) {
-        // Reset the quiz, update question count, and show the home content
-        
-        homeBox.classList.remove('active');
-        quizSection.classList.remove('active');
-        resultBox.classList.remove('active');
+        // show the home content
         rulesInfo.classList.remove('active');
+        resultBox.classList.remove('active');
         quizBox.classList.remove('active');
+        quizSection.remove('active');
+        main.classList.add('active');
+        homeBox.classList.remove('active');
     }
     // Check if Start button is clicked
     if (clickedButton === startBtn) {
@@ -237,8 +237,7 @@ document.addEventListener('DOMContentLoaded', function () {
      * Function to get the user result 
      */
     function quizResult() {
-        
-
+        //scoreMessageRef.innerHTML = "Quiz is over. Here is your result";
         resultBox.querySelector('.total-question').innerHTML = totalQuestion;
         resultBox.querySelector('.total-attempt').innerHTML = attempt;
         resultBox.querySelector('.total-correct').innerHTML = correctAnswers;

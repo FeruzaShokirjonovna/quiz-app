@@ -5,6 +5,26 @@ let questions = [
       answer: 2 // Index of the correct option (Blue whale)
     },
     {
+      question: "Which element has the chemical symbol 'O'?",
+      options: ["Oxygen", "Osmium", "Olive", "Opium"],
+      answer: 0, // Index of the correct option (Oxygen)
+    },
+    {
+      question: "What is the chemical symbol for gold?",
+      options: ["Au", "Ag", "Fe", "Cu"],
+      answer: 0, // Index of the correct option (Au)
+    },
+    {
+      question: "How many sides does a hexagon have?",
+      options: ["Five", "Six", "Seven", "Eight"],
+      answer: 1, // Index of the correct option (Six)
+    },
+    {
+      question: "What is the square root of 64?",
+      options: ["6", "7", "8", "9"],
+      answer: 2, // Index of the correct option (8)
+    },
+    {
       question: "Which planet is known as the Red Planet?",
       options: ["Earth", "Mars", "Jupiter", "Venus"],
       answer: 1 // Index of the correct option (Mars)
@@ -15,9 +35,14 @@ let questions = [
       answer: 2 // Index of the correct option (Canberra)
     },
     {
-      question: "In what year did Christopher Columbus reach the Americas?",
-      options: ["1492", "1520", "1607", "1620"],
-      answer: 0 // Index of the correct option (1492)
+      question: "What is the capital of Australia?",
+      options: ["Sydney", "Melbourne", "Canberra", "Brisbane"],
+      answer: 2, // Index of the correct option (Canberra)
+    },
+    {
+      question: "In which year did the Titanic sink?",
+      options: ["1910", "1912", "1915", "1918"],
+      answer: 1, // Index of the correct option (1912)
     },
     {
       question: "Which element has the chemical symbol 'O'?",
@@ -33,11 +58,6 @@ let questions = [
       question: "What is the currency of Japan?",
       options: ["Yuan", "Yen", "Won", "Ringgit"],
       answer: 1 // Index of the correct option (Yen)
-    },
-    {
-      question: "Which famous scientist developed the theory of general relativity?",
-      options: ["Isaac Newton", "Galileo Galilei", "Albert Einstein", "Stephen Hawking"],
-      answer: 2 // Index of the correct option (Albert Einstein)
     },
     {
       question: "What is the capital of Brazil?",

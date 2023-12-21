@@ -1,3 +1,6 @@
+# Welcome to Brain Ring Quiz game
+Are you ready to engage your mind, test your knowledge, and embark on an exhilarating journey of intellect? Look no further! Brain Ring is here to challenge your wits and expand your horizons in a quiz game like no other.
+
 ## Table of Contents
 
 - [UX](#ux "UX")
@@ -39,7 +42,7 @@
 ### User Requirements and Expectations
 - The visitors wish to see readable texts to be able to concentrate on the game.
 - The visitors wish to have clear instructions to be able to start the game. They expect to see clear navigations and be able to use all the possible gadgets for this game. The letters should be easy to read and the game should show a clear sign of how many questions there are as well as keep a score for the right and wrong answers.
-- The users should have the chance to restart the game regardless if they lost it or won if they wish to get better results.
+
 ### User Goals
 - Test and improve knowledge:
   - Users may aim to test their current knowledge on various topics.
@@ -97,31 +100,71 @@
 ## Design Choices
 
 ### Fonts
+I've integrated [Google Fonts](https://fonts.google.com/ "Google Fonts") to find a typeface that complements the website's aesthetic. For the main text, I've opted for 'Roboto'.
 ### Icons
 As for icons I decided to use for my website [Font Awesome library](https://fontawesome.com/ "Font Awesome").
  
 ### Colors
+- #e5dbff- violet : for background of Home page;
+- #fff - white: for name input, Rules background, Result text;
+- #e7f5ff - blue: for Quiz background;
+- red and green : for showing correct and wrong answer options, also for score indicator (#06da8c-green; #f03e3e-red);  
+- #19523d: for quiz box border, header and footer borders;
+- #cccccc: for background of score indicators;
+- #1c7ed6: for next button in quiz;
+
 ### Structure
-The website will follow a mobile-first strategy, the main target is to create a visually appealing design for smaller screens. As for the smallest design I chose Samsung Galaxy S8 and iPhone 5.
+The website will follow a mobile-first strategy, the main target is to create a visually appealing design for smaller screens. As for the smallest design I chose Samsung Galaxy S8 and iPhone x.
 [Back to Top](#table-of-contents)
 
 ## Wireframes
 
 Wireframes were created using [Balsamic](https://balsamiq.com/wireframes/ "Balsamic") for visual structuring and layout planning, maintaining design consistency across devices.
 
+Desktop View:
+
+![Desktop View](assets/wireframes/desktop-quiz.png)
+
+Tablet View:
+
+![Tablet View](assets/wireframes/cell-tablet-quiz.png)
+
 [Back to Top](#table-of-contents)
 
 ## Features
 
 ### Welcome Page
+- The welcome page serves as an introduction to the game, providing essential details about the rules and mechanics. Rules can be seen by pressing the Rules button.
+
+ Mobile View:
+
+![Mobile View]
+
+Desktop View:
+
+![Desktop View](assets/images/Home-page.png)
 
 ## Game Page
+- The game page offers an engaging quiz experience, presenting a series of questions. Users are challenged to answer each question correctly. The interface is designed for intuitive navigation, with interactive elements for selecting answers. Visual feedback, such as highlighting correct and incorrect choices and score indicator, enhances the gaming experience.Users have an option of skipping question if they don't know the answer, however this affects their overall result.
+
+Mobile View:
+
+![Mobile View](assets/images/quiz-page.png)
 
 ## Results Page
+- Upon completing the quiz, the results page displays the user's performance. A detailed summary includes the number of correct and incorrect answers.
 
-### Footer
+ Mobile View:
+
+![Mobile View]
+
+Desktop View:
+
+![Desktop View](assets/images/result-page.png)
 
 ### Features to be Implemented
+- **User Highscore:** Introduce a personalized highscore feature for each user, allowing them to track their performance.
+
 
 [Back to Top](#table-of-contents)
 
@@ -134,22 +177,60 @@ Wireframes were created using [Balsamic](https://balsamiq.com/wireframes/ "Balsa
 - [Javascript](https://en.wikipedia.org/wiki/JavaScript "Javascript")
 
 ### Libraries & Frameworks
+- [Google Fonts](https://fonts.google.com/ "Google Fonts")
+- [Font Awesome library](https://fontawesome.com/ "Font Awesome")
 
 ### Tools
+- [Balsamic](https://balsamiq.com/wireframes/ "Balsamic") - to create wiredrames
+- [W3C HTML Validation Service](https://validator.w3.org/ "W3C HTML")
+- [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/ "W3C CSS")
+- [jshint](https://jshint.com/ "jshint")
+[Gitpod](https://www.gitpod.io/#get-started) - used to deploy the website.
+* [Github](https://github.com/) - used to host and edit the website.
+
 
 [Back to Top](#table-of-contents)
 
 ## Testing
+- The game website accomplishes its objectives with a user-friendly design that is responsive to different screen sizes. The interface is clean, enter their username, and enjoy a smooth gaming experience.
 
 ### Functionality Tests
+| Test Case | Description | Expected Result |
+|-----------|-------------|-----------------|
+| 1         | Start the game with a valid username and difficulty level. | Game starts, and the first question is displayed. |
+| 2         | Start the game with an empty username. | Alert message displays: "Please enter a username." |
+| 3         | Answer a question correctly. | Correct answer highlighted, and the next question is displayed. |
+| 4         | Answer a question incorrectly. | Incorrect answer highlighted, correct answer highlighted, and the next question is displayed. |
+| 5         | Complete the quiz. | Final score message displays with the table of results. |
+| 6         | Click on the "Try Again" button after completing the quiz. | Game restarts, and the first question is displayed. |
+
 
 ### Error Handling Tests
 
 ### Responsive Design Tests
 
+| Test Case | Description | Expected Result |
+|-----------|-------------|-----------------|
+| 1         | Test the game on various devices (desktop, tablet, mobile). | Game displays correctly with a user-friendly layout on all devices. |
+
+
 ### Performance Tests
 
+| Test Case | Description | Expected Result |
+|-----------|-------------|-----------------|
+| 1         | Use Google Lighthouse for performance testing. | High performance scores for mobile and desktop versions. |
+
+
 ### General Tests
+
+| Test Case | Description | Expected Result |
+|-----------|-------------|-----------------|
+| 1         | Click on the "Rules" button. | How to play section toggles visibility. |
+| 2         | Click on the "Rules" button multiple times. | How to play section toggles visibility correctly. |
+| 3         | Skip the question without selecting an answer. | Gives next question not highlighting score indicator. |
+| 4         | Reset the game after completing it. | Game resets, and the start page is displayed. |
+| 5         | Test the game on various browsers. | Game functions correctly on major web browsers. |
+
 
 ## Bugs
 
@@ -164,5 +245,11 @@ Wireframes were created using [Balsamic](https://balsamiq.com/wireframes/ "Balsa
 [Back to Top](#table-of-contents)
 
 ### Credits
+
+## Acknowledgements
+The site was completed as a Portfolio 2 Project piece for the Full Stack Software Developer (e-Commerce) Diploma at the [Code Institute](https://codeinstitute.net/). As such I would like to thank my mentor [Precious Ijege](https://www.linkedin.com/in/precious-ijege-908a00168/), the Slack community, and all at the Code Institute for their help and support. 
+
+Orifjonova Feruza Shokirjonovna 2023.
+
 
 [Back to Top](#table-of-contents)
