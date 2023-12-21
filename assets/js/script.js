@@ -84,6 +84,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const nextBtn = document.querySelector('.next-btn');
     const username = document.querySelector("#name-input").value;
 
+//Inspired by https://youtu.be/LJ4PZ8JnRCg?si=WmTnFSNYpJCSLI95    
 
     /***
      * Function to push questions into availableQuestions
@@ -94,7 +95,7 @@ document.addEventListener('DOMContentLoaded', function () {
             availableQuestions.push(questions[i]);
         }
     }
-
+//Random question and options inspired by https://www.geeksforgeeks.org/random-string-generator-using-javascript/
     /***
      * Function to get new question and options
      */

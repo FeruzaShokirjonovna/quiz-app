@@ -1,5 +1,7 @@
 # Welcome to Brain Ring Quiz game
-Are you ready to engage your mind, test your knowledge, and embark on an exhilarating journey of intellect? Look no further! Brain Ring is here to challenge your wits and expand your horizons in a quiz game like no other.
+Are you ready to engage your mind, test your knowledge, and embark on an exhilarating journey of intellect? Look no further! ![Brain Ring](https://feruzashokirjonovna.github.io/quiz-app/) website is here to challenge your wits and expand your horizons in a quiz game like no other.
+
+![Responsive image example](assets/images/responsive-pages.png)
 
 ## Table of Contents
 
@@ -144,14 +146,15 @@ Desktop View:
 
 ![Desktop View](assets/images/Home-page.png)
 
-## Game Page
+### Game Page
 - The game page offers an engaging quiz experience, presenting a series of questions. Users are challenged to answer each question correctly. The interface is designed for intuitive navigation, with interactive elements for selecting answers. Visual feedback, such as highlighting correct and incorrect choices and score indicator, enhances the gaming experience.Users have an option of skipping question if they don't know the answer, however this affects their overall result.
 
 Mobile View:
 
 ![Mobile View](assets/images/quiz-page.png)
 
-## Results Page
+### Results Page
+
 - Upon completing the quiz, the results page displays the user's performance. A detailed summary includes the number of correct and incorrect answers.
 
  Mobile View:
@@ -162,7 +165,12 @@ Desktop View:
 
 ![Desktop View](assets/images/result-page.png)
 
+### 404 Error page
+
+![404 Error Page](assets/images/error-page.png)
+
 ### Features to be Implemented
+
 - **User Highscore:** Introduce a personalized highscore feature for each user, allowing them to track their performance.
 
 
@@ -232,7 +240,7 @@ Desktop View:
 | Test Case | Description | Expected Result |
 |-----------|-------------|-----------------|
 | 1         | Click on the "Rules" button. | How to play section toggles visibility. |
-| 2         | Click on the "Rules" button multiple times. | How to play section toggles visibility correctly. |
+| 2         | Click on the "Exit" button in Rules. | How to play section disappears. |
 | 3         | Skip the question without selecting an answer. | Gives next question not highlighting score indicator. |
 | 4         | Reset the game after completing it. | Game resets, and the start page is displayed. |
 | 5         | Test the game on various browsers. | Game functions correctly on major web browsers. |
@@ -289,6 +297,31 @@ Cloning the repository will allow to download a local version of the repository 
 [Back to Top](#table-of-contents)
 
 ### Credits
+
+Idea, content and text are developed by myself.
+Questions are written by myself.
+
+#### Code
+
+- CSS
+Start and Rules "pressed" Button styles are customized from ![W3scools](https://www.w3schools.com/css/css3_buttons.asp)
+
+- Javascript
+Inspired by ![You Tube Tutorial](https://youtu.be/LJ4PZ8JnRCg?si=WmTnFSNYpJCSLI95)
+For make questions and options given randomly ![GeeksForGeeks](https://www.geeksforgeeks.org/random-string-generator-using-javascript/) 
+
+#### Inspiration and tutorials used from
+
+  - [W3Schools](https://www.w3schools.com/)
+  - [Stack overflow](https://stackoverflow.com/)
+  - Code Institute Slack Channel
+
+#### Templates and tutorial for creating the readme-file
+
+  - [bezebee - My First Project](https://github.com/bezebee/My-First-Project/blob/main/README.md)
+  - [Drupal Wiki](https://www.drupal.org/docs/develop/managing-a-drupalorg-theme-module-or-distribution-project/documenting-your-project/readmemd-template)
+  - [GitHub Docs](https://docs.github.com/en)    
+
 
 ## Acknowledgements
 The site was completed as a Portfolio 2 Project piece for the Full Stack Software Developer (e-Commerce) Diploma at the [Code Institute](https://codeinstitute.net/). As such I would like to thank my mentor [Precious Ijege](https://www.linkedin.com/in/precious-ijege-908a00168/), the Slack community, and all at the Code Institute for their help and support. 
