@@ -1,5 +1,5 @@
 # Welcome to Brain Ring Quiz game
-Are you ready to engage your mind, test your knowledge, and embark on an exhilarating journey of intellect? Look no further! ![Brain Ring](https://feruzashokirjonovna.github.io/quiz-app/) website is here to challenge your wits and expand your horizons in a quiz game like no other.
+Are you ready to engage your mind, test your knowledge, and embark on an exhilarating journey of intellect? Look no further! [Brain Ring](https://feruzashokirjonovna.github.io/quiz-app/) website is here to challenge your wits and expand your horizons in a quiz game like no other.
 
 ![Responsive image example](assets/images/responsive-pages.png)
 
@@ -7,18 +7,18 @@ Are you ready to engage your mind, test your knowledge, and embark on an exhilar
 
 - [UX](#ux "UX")
   - [User Goals](#user-goals "User Goals")
-  - [User Stories](#user-stories "User Stories")
   - [Site Owners Goals](#site-owners-goals)
   - [User Requirements and Expectations](#user-requirements-and-expectations)
     - [Requirements](#requirements)
     - [Expectations](#expectations)
+    - [Wireframes](#wireframes)
   - [Design Choices](#design-choices)
     - [Fonts](#fonts)
     - [Icons](#icons)
     - [Colors](#colors)
     - [Structure](#structure)
-- [Wireframes](#wireframes)
-  - [Features](#features)
+- [Features](#features)
+  - [Existing Features](#existing-features)
     - [Welcome Page](#welcome-page)
     - [Game Page](#game-page)
     - [Results Page](#results-page)
@@ -59,9 +59,6 @@ Are you ready to engage your mind, test your knowledge, and embark on an exhilar
 
 [Back to Top](#table-of-contents)
 
-### User Stories
-[Back to Top](#table-of-contents)
-
 ### Site owners Goals
 - To create a quiz that covers a wide variety of subjects.
 - Increase User Engagement
@@ -88,6 +85,7 @@ Are you ready to engage your mind, test your knowledge, and embark on an exhilar
 [Back to Top](#table-of-contents)
 
 ### Expectations
+
 - Platform Accessibility:
   - Users expect the platform to be accessible on various devices, ensuring a consistent and user-friendly experience, whether on desktop or mobile.
 - Engaging Quiz Content:
@@ -97,29 +95,7 @@ Are you ready to engage your mind, test your knowledge, and embark on an exhilar
 - Intuitive User Interface:
   - Users anticipate a user-friendly and visually appealing interface that is easy to navigate, contributing to an enjoyable overall experience.
 
-[Back to Top](#table-of-contents)
-
-## Design Choices
-
-### Fonts
-I've integrated [Google Fonts](https://fonts.google.com/ "Google Fonts") to find a typeface that complements the website's aesthetic. For the main text, I've opted for 'Roboto'.
-### Icons
-As for icons I decided to use for my website [Font Awesome library](https://fontawesome.com/ "Font Awesome").
- 
-### Colors
-- #e5dbff- violet : for background of Home page;
-- #fff - white: for name input, Rules background, Result text;
-- #e7f5ff - blue: for Quiz background;
-- red and green : for showing correct and wrong answer options, also for score indicator (#06da8c-green; #f03e3e-red);  
-- #19523d: for quiz box border, header and footer borders;
-- #cccccc: for background of score indicators;
-- #1c7ed6: for next button in quiz;
-
-### Structure
-The website will follow a mobile-first strategy, the main target is to create a visually appealing design for smaller screens. As for the smallest design I chose Samsung Galaxy S8 and iPhone x.
-[Back to Top](#table-of-contents)
-
-## Wireframes
+### Wireframes
 
 Wireframes were created using [Balsamic](https://balsamiq.com/wireframes/ "Balsamic") for visual structuring and layout planning, maintaining design consistency across devices.
 
@@ -133,10 +109,34 @@ Tablet View:
 
 [Back to Top](#table-of-contents)
 
-## Features
+## Design Choices
+
+### Fonts
+I've integrated [Google Fonts](https://fonts.google.com/ "Google Fonts") to find a typeface that complements the website's aesthetic. For the main text, I've opted for 'Roboto'.
+
+### Icons
+As for icons I decided to use for my website [Font Awesome library](https://fontawesome.com/ "Font Awesome").
+ 
+### Colors
+- #e5dbff- violet : for background of Home page;
+- #fff - white: for name input, Rules background, Result text;
+- #e7f5ff - blue: for Quiz background;
+- red and green : for showing correct and wrong answer options, also for score indicator (#06da8c-green; #f03e3e-red);  
+- #19523d - dark blue: for quiz box border, header and footer borders;
+- #cccccc - grey: for background of score indicators;
+- #1c7ed6 - light blue: for next button in quiz;
+
+### Structure
+The website will follow a mobile-first strategy, the main target is to create a visually appealing design for smaller screens. As for the smallest design I chose Samsung Galaxy S8 and iPhone x.
+
+[Back to Top](#table-of-contents)
+
+## Existing Features
 
 ### Welcome Page
+
 - The welcome page serves as an introduction to the game, providing essential details about the rules and mechanics. Rules can be seen by pressing the Rules button.
+- The user enters there a username, i not there is alert message "Please enter your name".
 
  Mobile View:
 
@@ -147,7 +147,11 @@ Desktop View:
 ![Desktop View](assets/images/Home-page.png)
 
 ### Game Page
-- The game page offers an engaging quiz experience, presenting a series of questions. Users are challenged to answer each question correctly. The interface is designed for intuitive navigation, with interactive elements for selecting answers. Visual feedback, such as highlighting correct and incorrect choices and score indicator, enhances the gaming experience.Users have an option of skipping question if they don't know the answer, however this affects their overall result.
+
+- The game page offers an engaging quiz experience, presenting a series of questions. Users are challenged to answer each question correctly.
+- The interface is designed for intuitive navigation, with interactive elements for selecting answers.
+- Visual feedback, such as highlighting correct and incorrect choices and score indicator, enhances the gaming experience.
+- Users have an option of skipping question if they don't know the answer, however this affects their overall result.
 
 Mobile View:
 
@@ -172,7 +176,7 @@ Desktop View:
 ### Features to be Implemented
 
 - **User Highscore:** Introduce a personalized highscore feature for each user, allowing them to track their performance.
-
+- **Choice Timer and Difficulty:** to choose from and difficulty levels, a user could choose a hard level and a short timer, to make it really difficult.
 
 [Back to Top](#table-of-contents)
 
@@ -217,7 +221,10 @@ Desktop View:
 
 | Test Case | Description | Expected Result |
 |-----------|-------------|-----------------|
-| 1         | Test the game on various devices (desktop, tablet, mobile). | Game displays correctly with a user-friendly layout on all devices. |
+| 1         | iPhone X | Game displays correctly with a user-friendly layout |
+| 3         | Samsung Galaxy A13 | Game displays correctly with a user-friendly layout |
+| 4         | Lenovo Tab P12 | Game displays correctly with a user-friendly layout |
+| 5         | LG Desktop 27'' | Game displays correctly with a user-friendly layout |
 
 
 ### Performance Tests
@@ -253,6 +260,8 @@ Desktop View:
 ![HTML Validation Image](assets/images/html_w3test.png)
 
 ![Css Validation Image](assets/images/css_w3test.png)
+
+![Javascript Validation Image](assets/images/jshint-test.png)
 
 ## Bugs
 
@@ -304,11 +313,12 @@ Questions are written by myself.
 #### Code
 
 - CSS
-Start and Rules "pressed" Button styles are customized from ![W3scools](https://www.w3schools.com/css/css3_buttons.asp)
+Start and Rules "pressed" Button styles are customized from [W3scools](https://www.w3schools.com/css/css3_buttons.asp)
 
 - Javascript
-- Inspired by ![You Tube Tutorial](https://youtu.be/LJ4PZ8JnRCg?si=WmTnFSNYpJCSLI95)
-- For making questions and options given randomly ![GeeksForGeeks](https://www.geeksforgeeks.org/random-string-generator-using-javascript/) 
+- Inspired by [You Tube Tutorial](https://youtu.be/LJ4PZ8JnRCg?si=WmTnFSNYpJCSLI95)
+- For making questions and options given randomly [GeeksForGeeks](https://www.geeksforgeeks.org/random-string-generator-using-javascript/)
+- To add pointer events to buttons guided John fron Tutor Support 
 
 #### Inspiration and tutorials used from
 
@@ -325,6 +335,8 @@ Start and Rules "pressed" Button styles are customized from ![W3scools](https://
 
 ## Acknowledgements
 The site was completed as a Portfolio 2 Project piece for the Full Stack Software Developer (e-Commerce) Diploma at the [Code Institute](https://codeinstitute.net/). As such I would like to thank my mentor [Precious Ijege](https://www.linkedin.com/in/precious-ijege-908a00168/), the Slack community, and all at the Code Institute for their help and support. 
+
+
 
 Orifjonova Feruza Shokirjonovna 2023.
 
