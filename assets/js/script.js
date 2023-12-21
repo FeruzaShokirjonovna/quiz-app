@@ -14,9 +14,9 @@ const questionNumber = document.querySelector('.question-number')
 const optionsList = document.querySelector('.options-list')
 const scoreIndicatorContainer = document.querySelector('.header-score')
 const tryAgainBtn = document.querySelector('.tryagain-btn');
-const scoreMessageRef = document.querySelector(".score-message");
 const homeSection = document.querySelector('.home');
 
+// Add event listeners to button click
 rulesBtn.addEventListener('click', clickedButtonHandler);
 exitBtn.addEventListener('click', clickedButtonHandler);
 tryAgainBtn.addEventListener('click', clickedButtonHandler);
@@ -29,9 +29,8 @@ startBtn.addEventListener('click', clickedButtonHandler);
  */
 function clickedButtonHandler(event) {
     const clickedButton = event.target;
-
+    //check if try again button clicked, then reset quiz
     if (clickedButton === tryAgainBtn) {
-        
         resetQuiz();
     }
     
@@ -57,7 +56,6 @@ function clickedButtonHandler(event) {
     if (clickedButton === exitBtn) {
         rulesInfo.classList.remove('active');
         homeBox.classList.remove('no-display');
-        
     }
 }
 
@@ -68,6 +66,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const nameInput = document.getElementById('name-input');
     nameInput.focus();
 });
+
 
     let questionCount = 0;
     let currentQuestion;

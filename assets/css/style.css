@@ -467,6 +467,7 @@ body {
     
 }
 
+/* Class to unable pointer events*/
 .no-pointer-event {
     pointer-events: none;
     }
@@ -484,7 +485,6 @@ body {
 .result-box h3 {
     font-size: 36px;
     line-height: 42px;
-
 }
 
 .result-box table {
@@ -541,7 +541,6 @@ body {
 #error-page h1 {
     padding-bottom: 15px;
     text-align: center;
-
 }
 
 #error-page p {

@@ -115,9 +115,11 @@ Tablet View:
 I've integrated [Google Fonts](https://fonts.google.com/ "Google Fonts") to find a typeface that complements the website's aesthetic. For the main text, I've opted for 'Roboto'.
 
 ### Icons
+
 As for icons I decided to use for my website [Font Awesome library](https://fontawesome.com/ "Font Awesome").
  
 ### Colors
+
 - #e5dbff- violet : for background of Home page;
 - #fff - white: for name input, Rules background, Result text;
 - #e7f5ff - blue: for Quiz background;
@@ -126,7 +128,10 @@ As for icons I decided to use for my website [Font Awesome library](https://font
 - #cccccc - grey: for background of score indicators;
 - #1c7ed6 - light blue: for next button in quiz;
 
+![Color Palette](assets/images/color-scheme.jpg)
+
 ### Structure
+
 The website will follow a mobile-first strategy, the main target is to create a visually appealing design for smaller screens. As for the smallest design I chose Samsung Galaxy S8 and iPhone x.
 
 [Back to Top](#table-of-contents)
@@ -213,17 +218,19 @@ Desktop View:
 - [Javascript](https://en.wikipedia.org/wiki/JavaScript "Javascript")
 
 ### Libraries & Frameworks
+
 - [Google Fonts](https://fonts.google.com/ "Google Fonts")
 - [Font Awesome library](https://fontawesome.com/ "Font Awesome")
+- [Canva](https://canva.com/ "Canva")
 
 ### Tools
-- [Balsamic](https://balsamiq.com/wireframes/ "Balsamic") - to create wiredrames
+
+- [Balsamic](https://balsamiq.com/wireframes/ "Balsamic") - to create wireframes
 - [W3C HTML Validation Service](https://validator.w3.org/ "W3C HTML")
 - [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/ "W3C CSS")
 - [jshint](https://jshint.com/ "jshint")
-[Gitpod](https://www.gitpod.io/#get-started) - used to deploy the website.
-* [Github](https://github.com/) - used to host and edit the website.
-
+- [Gitpod](https://www.gitpod.io/#get-started) - used to deploy the website.
+- [Github](https://github.com/) - used to host and edit the website.
 
 [Back to Top](#table-of-contents)
 
@@ -231,10 +238,11 @@ Desktop View:
 - The game website accomplishes its objectives with a user-friendly design that is responsive to different screen sizes. The interface is clean, enter their username, and enjoy a smooth gaming experience.
 
 ### Functionality Tests
+
 | Test Case | Description | Expected Result |
 |-----------|-------------|-----------------|
-| 1         | Start the game with a valid username and difficulty level. | Game starts, and the first question is displayed. |
-| 2         | Start the game with an empty username. | Alert message displays: "Please enter a username." |
+| 1         | Start the quiz with a valid username. | Game starts, and the first question is displayed. |
+| 2         | Start the quiz with an empty username. | Alert message displays: "Please enter a username." |
 | 3         | Answer a question correctly. | Correct answer highlighted, and the next question is displayed. |
 | 4         | Answer a question incorrectly. | Incorrect answer highlighted, correct answer highlighted, and the next question is displayed. |
 | 5         | Complete the quiz. | Final score message displays with the table of results. |
@@ -258,6 +266,7 @@ Desktop View:
 | 1         | Use Google Lighthouse for performance testing. | High performance scores for mobile and desktop versions. |
 
 - The final project was tested using Google's Lighthouse on github pages. The results are below
+
 - Performance test for Mobile:
 
 ![Performance test for mobile](assets/images/lighthouse-mobile.png)
@@ -281,9 +290,15 @@ Desktop View:
 - HTML, CSS and JavaScript codes where all tested jigsaw.w3.org / validator.w3.org / jshint.com
 - JShint was used to test the the JavaScript code, there was 1 undefined variable for question which is in questions.js folder, there were a number of warnings for 'const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz). The warnings are be removed by Creating jshint in the root directory of the project.
 
+HTML Validation Image:
+
 ![HTML Validation Image](assets/images/html_w3test.png)
 
+Css Validation Image:
+
 ![Css Validation Image](assets/images/css_w3test.png)
+
+Javascript Validation Image
 
 ![Javascript Validation Image](assets/images/jshint-test.png)
 
@@ -333,13 +348,14 @@ Cloning the repository will allow to download a local version of the repository 
 
 ### Credits
 
-Idea, content and text are developed by myself.
-Questions are written by myself.
+- Idea, content and text are developed by myself.
+- Questions are written by myself.
 
 #### Code
 
-- CSS
-Start and Rules "pressed" Button styles are customized from [W3scools](https://www.w3schools.com/css/css3_buttons.asp)
+- CSS:
+- Start and Rules "pressed" Button styles are customized from [W3schools](https://www.w3schools.com/css/css3_buttons.asp)
+- Quiz Box shadow is Customized from [html-css-js](https://html-css-js.com/css/generator/box-shadow/)
 
 - Javascript:
 - Inspired by Love Math Project
