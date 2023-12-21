@@ -205,8 +205,6 @@ Desktop View:
 | 6         | Click on the "Try Again" button after completing the quiz. | Game restarts, and the first question is displayed. |
 
 
-### Error Handling Tests
-
 ### Responsive Design Tests
 
 | Test Case | Description | Expected Result |
@@ -220,6 +218,14 @@ Desktop View:
 |-----------|-------------|-----------------|
 | 1         | Use Google Lighthouse for performance testing. | High performance scores for mobile and desktop versions. |
 
+- The final project was tested using Google's Lighthouse on github pages. The results are below
+- Performance test for Mobile:
+
+![Performance test for mobile](assets/images/lighthouse-mobile.png)
+
+- Performance test for Desktop:
+
+![Performance test for Desktop](assets/images/lighthouse-desktop.png)
 
 ### General Tests
 
@@ -231,16 +237,54 @@ Desktop View:
 | 4         | Reset the game after completing it. | Game resets, and the start page is displayed. |
 | 5         | Test the game on various browsers. | Game functions correctly on major web browsers. |
 
+### Validation tests
+
+- HTML, CSS and JavaScript codes where all tested jigsaw.w3.org / validator.w3.org / jshint.com
+- JShint was used to test the the JavaScript code, there was 1 undefined variable for question which is in questions.js folder, there were a number of warnings for 'const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz). The warnings are be removed by Creating jshint in the root directory of the project.
+
+![HTML Validation Image](assets/images/html_w3test.png)
+
+![Css Validation Image](assets/images/css_w3test.png)
 
 ## Bugs
 
 ## Fixed Bugs
+
+During validation these bugs became known during the validation stage, a brief description is below:
+
+![HTML](assets/images/html-bug.png)
+
+These are easily fixed by removing slash.
+
+![CSS](assets/images/bug-css.png)
+
+This was an oversight from the development phase when the font size was being modified. It was easily fixed by setting the background color as planned.
 
 ## Unfixed Bugs
 
 [Back to Top](#table-of-contents)
 
 ## Deployment
+
+The site was deployed to GitHub pages. The steps to deploy are as follows:
+
+- In the GitHub repository, navigate to the Settings tab
+- From the source section drop-down menu, select the Main Branch
+- Once the main branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
+  
+The live link can be found here - <https://feruzashokirjonovna.github.io/quiz-app/>
+
+### Cloning
+
+Cloning the repository will allow to download a local version of the repository to be worked on. 
+
+- Find the relevant GitHub repository
+- Press the arrow on the Code button
+- Copy the link that is shown in the drop-down
+- Now open whatever editor for use & select the directory location where needed the clone created
+- In the terminal type 'git clone' & then paste the link copied in GitHub
+- Press enter and the local clone will be created.
+
 
 [Back to Top](#table-of-contents)
 
