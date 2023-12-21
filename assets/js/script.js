@@ -14,32 +14,27 @@ const questionNumber = document.querySelector('.question-number')
 const optionsList = document.querySelector('.options-list')
 const scoreIndicatorContainer = document.querySelector('.header-score')
 const tryAgainBtn = document.querySelector('.tryagain-btn');
-const homeBtn = document.querySelector('.home-btn');
 const scoreMessageRef = document.querySelector(".score-message");
-
+const homeSection = document.querySelector('.home');
 
 rulesBtn.addEventListener('click', clickedButtonHandler);
 exitBtn.addEventListener('click', clickedButtonHandler);
 tryAgainBtn.addEventListener('click', clickedButtonHandler);
 startBtn.addEventListener('click', clickedButtonHandler);
-homeBtn.addEventListener('click', clickedButtonHandler);
 
+
+
+/***
+ * Function to change pages when buttons clicked
+ */
 function clickedButtonHandler(event) {
     const clickedButton = event.target;
 
     if (clickedButton === tryAgainBtn) {
+        
         resetQuiz();
     }
-
-    if (clickedButton === homeBtn) {
-        // show the home content
-        rulesInfo.classList.remove('active');
-        resultBox.classList.remove('active');
-        quizBox.classList.remove('active');
-        quizSection.remove('active');
-        main.classList.add('active');
-        homeBox.classList.remove('active');
-    }
+    
     // Check if Start button is clicked
     if (clickedButton === startBtn) {
         // Check if the nameInput is empty
@@ -49,7 +44,7 @@ function clickedButtonHandler(event) {
             // If not empty, start the quiz
             quizSection.classList.add('active');
             rulesInfo.classList.remove('active');
-            main.classList.remove('active');
+            
             quizBox.classList.add('active');
             startQuiz(username);
         }
@@ -57,18 +52,20 @@ function clickedButtonHandler(event) {
     // Rules info activates when the rules button clicked
     if (clickedButton === rulesBtn) {
         rulesInfo.classList.add('active');
-        main.classList.add('active');
+        homeBox.classList.add('no-display');
     }
     // Exit button removes Rules info
     if (clickedButton === exitBtn) {
         rulesInfo.classList.remove('active');
-        main.classList.remove('active');
+        homeBox.classList.remove('no-display');
+        
     }
 }
 
 
 // Inside this function, the DOM is fully loaded
 document.addEventListener('DOMContentLoaded', function () {
+    
     const nameInput = document.getElementById('name-input');
     nameInput.focus();
 });
@@ -227,10 +224,12 @@ document.addEventListener('DOMContentLoaded', function () {
      */
     function quizOver() {
         homeBox.classList.add('active');
+        homeSection.classList.add('no-pointer-event');
         quizSection.classList.remove('active');
         resultBox.classList.add('active');
         rulesInfo.classList.remove('active');
         quizBox.classList.remove('active');
+        homeBox.classList.add('no-display');
         quizResult();
     }
 
@@ -252,6 +251,8 @@ document.addEventListener('DOMContentLoaded', function () {
      * Function to restart the quiz
      */
     function resetQuiz() {
+        quizSection.classList.add('active');
+        quizBox.classList.add('active');
         correctAnswers = 0;
         attempt = 0;
         questionCount = 0;

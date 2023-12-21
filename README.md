@@ -307,8 +307,8 @@ Questions are written by myself.
 Start and Rules "pressed" Button styles are customized from ![W3scools](https://www.w3schools.com/css/css3_buttons.asp)
 
 - Javascript
-Inspired by ![You Tube Tutorial](https://youtu.be/LJ4PZ8JnRCg?si=WmTnFSNYpJCSLI95)
-For make questions and options given randomly ![GeeksForGeeks](https://www.geeksforgeeks.org/random-string-generator-using-javascript/) 
+- Inspired by ![You Tube Tutorial](https://youtu.be/LJ4PZ8JnRCg?si=WmTnFSNYpJCSLI95)
+- For making questions and options given randomly ![GeeksForGeeks](https://www.geeksforgeeks.org/random-string-generator-using-javascript/) 
 
 #### Inspiration and tutorials used from
 
