@@ -22,6 +22,16 @@ exitBtn.addEventListener('click', clickedButtonHandler);
 tryAgainBtn.addEventListener('click', clickedButtonHandler);
 startBtn.addEventListener('click', clickedButtonHandler);
 
+// Add an event listener to each option
+document.querySelectorAll('.option').forEach(option => {
+    option.addEventListener('click', () => {
+        // Remove 'selected' class from all options
+        document.querySelectorAll('.option').forEach(opt => opt.classList.remove('selected'));
+
+        // Add 'selected' class to the clicked option
+        option.classList.add('selected');
+    });
+});
 
 
 /***
@@ -145,7 +155,11 @@ document.addEventListener('DOMContentLoaded', function () {
      */
     function getResult(optionElement) {
         const id = parseInt(optionElement.id);
+        // Remove 'selected' class from all options
+        document.querySelectorAll('.option').forEach(opt => opt.classList.remove('selected'));
 
+        // Add 'selected' class to the clicked option
+        optionElement.classList.add('selected');
         //get the answer by comparing the id of the clicked option
         if (id === currentQuestion.answer) {
             //set green background color if it is true

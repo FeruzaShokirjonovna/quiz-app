@@ -27,7 +27,7 @@
     </header>
 
     <main class="main">
-        
+
         <!--Home section-->
         <div class="container">
 
@@ -46,18 +46,21 @@
 
                     <!--Options-->
                     <div class="options-list">
-
+                        <div class="option" onclick="getResult(this)"></div>
+                        <div class="option" onclick="getResult(this)"></div>
+                        <div class="option" onclick="getResult(this)"></div>
+                        <div class="option" onclick="getResult(this)"></div>
                     </div>
                     <!--Quiz Footer-->
                     <div class="quiz-footer">
-                        <button type="button" class="next-btn" aria-label="next" onclick="next()"><span>Next</span></button>
+                        <button type="button" class="next-btn" aria-label="next"
+                            onclick="next()"><span>Next</span></button>
                     </div>
                 </div>
             </section>
 
             <!--Result section-->
             <div class="result-box">
-        
                 <h1>Result</h1>
                 <table>
                     <tr>
@@ -85,7 +88,7 @@
                         <td><span class="total-score"></span></td>
                     </tr>
                 </table>
-
+                <button class="back-btn" aria-label="back">Back</button>
                 <button class="tryagain-btn" aria-label="try again">Try Again</button>
             </div>
 
@@ -98,7 +101,6 @@
                         Name</label>
                     <br>
                     <input type="text" id="name-input" name="name-input" placeholder="Enter Your Name" required>
-
                     <button class="start-btn" aria-label="start">Start</button>
                     <button class="rules-btn" aria-label="rules" id="rules-btn">Rules</button>
                 </div>
