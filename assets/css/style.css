@@ -462,8 +462,7 @@ body {
     color: white;
     opacity: 0;
     transition: .3s ease;
-    align-items: center;
-    
+    align-items: center;  
 }
 
 /* Class to unable pointer events*/

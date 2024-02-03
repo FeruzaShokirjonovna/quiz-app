@@ -204,19 +204,24 @@ document.addEventListener('DOMContentLoaded', function () {
 
     /***
      * Function to change the questions when clicked next button,
+     * displays alert message, if user clicks next without choosing any answer 
      * if questions are over, finishes quiz 
      */
     function next() {
-        if (questionCount === totalQuestion) {
+        const selectedOption = document.querySelector('.option.selected');
+        if (!selectedOption) {
+            alert('Please select an answer before moving to the next question.');
+        } else {
+            if (questionCount === totalQuestion) {
             console.log("quiz over");
             questionCount = 0; // Reset question count
             quizOver();
         }
-        else {
+            else {
             getNewQuestion();
+            }
         }
     }
-
     /***
      * Function to finish the quiz
      */
