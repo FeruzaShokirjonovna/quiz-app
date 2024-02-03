@@ -157,7 +157,6 @@ document.addEventListener('DOMContentLoaded', function () {
         const id = parseInt(optionElement.id);
         // Remove 'selected' class from all options
         document.querySelectorAll('.option').forEach(opt => opt.classList.remove('selected'));
-
         // Add 'selected' class to the clicked option
         optionElement.classList.add('selected');
         //get the answer by comparing the id of the clicked option
