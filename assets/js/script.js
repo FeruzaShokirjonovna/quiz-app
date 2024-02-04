@@ -1,8 +1,9 @@
+/*jshint esversion: 6 */
+
 // Global variables to access from more than 1 functions
 const rulesBtn = document.querySelector('.rules-btn');
 const rulesInfo = document.querySelector('.rules-info');
 const exitBtn = document.querySelector('.info-btn-exit');
-const main = document.querySelector('.main');
 const quizSection = document.querySelector('.quiz-section');
 const startBtn = document.querySelector('.start-btn');
 const quizBox = document.querySelector('.quiz-box');
@@ -114,10 +115,10 @@ document.addEventListener('DOMContentLoaded', function () {
         availableQuestions.splice(index1, 1);
         //set options
         //get the length of options
-        const optionLen = currentQuestion.options.length
+        const optionLen = currentQuestion.options.length;
         //push options to available options array
         for (let i = 0; i < optionLen; i++) {
-            availableOptions.push(i)
+            availableOptions.push(i);
         }
         //remove old options
         optionsList.innerHTML = '';
@@ -133,10 +134,10 @@ document.addEventListener('DOMContentLoaded', function () {
             option.innerHTML = currentQuestion.options[optionIndex];
             option.id = optionIndex;
             option.className = "option";
-            optionsList.appendChild(option)
+            optionsList.appendChild(option);
             option.setAttribute('onclick', 'getResult(this)');
         }
-        questionCount++
+        questionCount++;
     }
 
     /***
@@ -155,7 +156,7 @@ document.addEventListener('DOMContentLoaded', function () {
             //add mark to correct answer
             updateScoreIndicator('correct');
             correctAnswers++;
-            console.log("correct:" + correctAnswers)
+            console.log("correct:" + correctAnswers);
         }
         else {
             //set red background color if it is wrong
@@ -198,7 +199,7 @@ document.addEventListener('DOMContentLoaded', function () {
      * Function to update score indicator
      */
     function updateScoreIndicator(markType) {
-        scoreIndicatorContainer.children[questionCount - 1].classList.add(markType)
+        scoreIndicatorContainer.children[questionCount - 1].classList.add(markType);
     }
 
     /***

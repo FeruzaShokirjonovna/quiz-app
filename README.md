@@ -1,7 +1,7 @@
 # Welcome to Brain Ring Quiz game
 Are you ready to engage your mind, test your knowledge, and embark on an exhilarating journey of intellect? Look no further! [Brain Ring](https://feruzashokirjonovna.github.io/quiz-app/) website is here to challenge your wits and expand your horizons in a quiz game like no other.
 
-![Responsive image example](assets/images/responsive-pages.png)
+![Responsive image example](assets/images/am_i_responsive.png)
 
 ## Table of Contents
 
@@ -235,7 +235,7 @@ Alert message:
 [Back to Top](#table-of-contents)
 
 ## Testing
-- The game website accomplishes its objectives with a user-friendly design that is responsive to different screen sizes. The interface is clean, enter their username, and enjoy a smooth gaming experience.
+- The game website accomplishes its objectives with a user-friendly design that is responsive to different screen sizes. The interface is clean, the users can enter their username, and enjoy a smooth gaming experience.
 
 ### Functionality Tests
 
@@ -245,8 +245,10 @@ Alert message:
 | 2         | Start the quiz with an empty username. | Alert message displays: "Please enter a username." |
 | 3         | Answer a question correctly. | Correct answer highlighted, and the next question is displayed. |
 | 4         | Answer a question incorrectly. | Incorrect answer highlighted, correct answer highlighted, and the next question is displayed. |
-| 5         | Complete the quiz. | Final score message displays with the table of results. |
-| 6         | Click on the "Try Again" button after completing the quiz. | Game restarts, and the first question is displayed. |
+| 5         | Click the next button skipping to choose any option. |Alert message displays: "Please select an anwer before moving to the next question."  |
+| 6         | Complete the quiz. | Final score message displays with the table of results. |
+| 7         | Click on the "Try Again" button after completing the quiz. | Game restarts, and the first question is displayed. |
+| 8         | Click on the "Back" button after completing the quiz. | The home page is displayed. |
 
 
 ### Responsive Design Tests
@@ -281,14 +283,15 @@ Alert message:
 |-----------|-------------|-----------------|
 | 1         | Click on the "Rules" button. | How to play section toggles visibility. |
 | 2         | Click on the "Exit" button in Rules. | How to play section disappears. |
-| 3         | Skip the question without selecting an answer. | Gives next question not highlighting score indicator. |
+| 3         | Skip the question without selecting an answer. | An alert message displays to ask the user to choose an option. |
 | 4         | Reset the game after completing it. | Game resets, and the start page is displayed. |
-| 5         | Test the game on various browsers. | Game functions correctly on major web browsers. |
+| 5         | Click on the "Back" button after completing the game. | The home page is displayed. |
+| 6         | Test the game on various browsers. | Game functions correctly on major web browsers. |
 
 ### Validation tests
 
 - HTML, CSS and JavaScript codes where all tested jigsaw.w3.org / validator.w3.org / jshint.com
-- JShint was used to test the the JavaScript code, there was 1 undefined variable for question which is in questions.js folder, there were a number of warnings for 'const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz). The warnings are be removed by Creating jshint in the root directory of the project.
+- JShint was used to test the the JavaScript code, there was 1 undefined variable for question which is in questions.js folder, there were a number of warnings for 'const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz). The warnings are be removed by include a commented out line at the top of the file /*jshint esversion: 6 */.
 
 HTML Validation Image:
 
@@ -318,7 +321,7 @@ This was an oversight from the development phase when the font size was being mo
 
 ## Unfixed Bugs
 
-There is no unfixed bugs.
+There are no unfixed bugs.
 
 [Back to Top](#table-of-contents)
 
@@ -330,17 +333,17 @@ The site was deployed to GitHub pages. The steps to deploy are as follows:
 - From the source section drop-down menu, select the Main Branch
 - Once the main branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
   
-The live link can be found here - <https://feruzashokirjonovna.github.io/quiz-app/>
+The live link can be found here - <https://feruzashokirjonovna.github.io/quiz-app/>.
 
 ### Cloning
 
 Cloning the repository will allow to download a local version of the repository to be worked on. 
 
-- Find the relevant GitHub repository
-- Press the arrow on the Code button
-- Copy the link that is shown in the drop-down
-- Now open whatever editor for use & select the directory location where needed the clone created
-- In the terminal type 'git clone' & then paste the link copied in GitHub
+- Find the relevant GitHub repository.
+- Press the arrow on the Code button.
+- Copy the link that is shown in the drop-down.
+- Now open whatever editor for use & select the directory location where needed the clone created.
+- In the terminal type 'git clone' & then paste the link copied in GitHub.
 - Press enter and the local clone will be created.
 
 
@@ -354,14 +357,14 @@ Cloning the repository will allow to download a local version of the repository 
 #### Code
 
 - CSS:
-- Start and Rules "pressed" Button styles are customized from [W3schools](https://www.w3schools.com/css/css3_buttons.asp)
-- Quiz Box shadow is Customized from [html-css-js](https://html-css-js.com/css/generator/box-shadow/)
+- Start and Rules "pressed" Button styles are customized from [W3schools](https://www.w3schools.com/css/css3_buttons.asp).
+- Quiz Box shadow is Customized from [html-css-js](https://html-css-js.com/css/generator/box-shadow/).
 
 - Javascript:
-- Inspired by Love Math Project
-- Inspired by [You Tube Tutorial](https://youtu.be/LJ4PZ8JnRCg?si=WmTnFSNYpJCSLI95)
-- For making questions and options given randomly [GeeksForGeeks](https://www.geeksforgeeks.org/random-string-generator-using-javascript/)
-- To add pointer events to buttons guided John fron Tutor Support 
+- Inspired by Love Math Project.
+- Inspired by [You Tube Tutorial](https://youtu.be/LJ4PZ8JnRCg?si=WmTnFSNYpJCSLI95).
+- For making questions and options given randomly [GeeksForGeeks](https://www.geeksforgeeks.org/random-string-generator-using-javascript/).
+- To add pointer events to buttons guided John from Tutor Support. 
 
 #### Inspiration and tutorials used from
 
@@ -371,13 +374,13 @@ Cloning the repository will allow to download a local version of the repository 
 
 #### Templates and tutorial for creating the readme-file
 
-  - [bezebee - My First Project](https://github.com/bezebee/My-First-Project/blob/main/README.md)
-  - [Drupal Wiki](https://www.drupal.org/docs/develop/managing-a-drupalorg-theme-module-or-distribution-project/documenting-your-project/readmemd-template)
-  - [GitHub Docs](https://docs.github.com/en)    
+  - [bezebee - My First Project](https://github.com/bezebee/My-First-Project/blob/main/README.md).
+  - [Drupal Wiki](https://www.drupal.org/docs/develop/managing-a-drupalorg-theme-module-or-distribution-project/documenting-your-project/readmemd-template).
+  - [GitHub Docs](https://docs.github.com/en).    
 
 
 ## Acknowledgements
-The site was completed as a Portfolio 2 Project piece for the Full Stack Software Developer (e-Commerce) Diploma at the [Code Institute](https://codeinstitute.net/). As such I would like to thank my mentor [Precious Ijege](https://www.linkedin.com/in/precious-ijege-908a00168/), the Slack community, and all at the Code Institute for their help and support. 
+The site was completed as a Portfolio 2 Project piece for the Full Stack Software Developer Diploma at the [Code Institute](https://codeinstitute.net/). As such I would like to thank my mentor [Precious Ijege](https://www.linkedin.com/in/precious-ijege-908a00168/), the Slack community, and all at the Code Institute for their help and support. 
 
 
 
