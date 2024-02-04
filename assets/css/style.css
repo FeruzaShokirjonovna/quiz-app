@@ -14,6 +14,11 @@ body {
     overflow: hidden;
 }
 
+/*Added to get rid of scrolling on mobile screens
+Customized from https://stackoverflow.com/questions/58964299/why-is-the-vertical-scroll-getting-stuck-in-mobile-view*/
+body div {
+    overflow: hidden;
+}
 .header {
     position: fixed;
     top: 0;
@@ -34,12 +39,10 @@ body {
     min-height: 100%;
     background-color: #e5dbff;
     transition: .3s ease;
-
 }
 
 .main.active {
-    filter: blur(50px);
-    
+    filter: blur(50px);    
 }
 
 /*Home section*/
@@ -70,8 +73,7 @@ body {
 
 .home-content.active {
     filter: blur(60px);
-    opacity: 0;
-    
+    opacity: 0;  
 }
 
 
@@ -188,7 +190,7 @@ body {
     background: snow;
     border-radius: 8px;
     padding: 30px;
-    margin: 40px auto;
+    margin: 30px 20px;
     color: #666;
     opacity: 0;
     pointer-events: none;

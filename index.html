@@ -20,111 +20,111 @@
 </head>
 
 <body>
-    <!--Header-->
-    <header class="header">
-        <a href="index.html">Home</a>
+    <div>
+        <!--Header-->
+        <header class="header"></header>
 
-    </header>
+        <!--Main section-->
+        <main class="main">
 
-    <main class="main">
+            <!--Home section-->
+            <div class="container">
 
-        <!--Home section-->
-        <div class="container">
+                <!--Quiz section-->
+                <section class="quiz-section">
+                    <div class="quiz-box">
+                        <h2>Brain Ring</h2>
+                        <div class="quiz-header">
+                            <div class="header-score"></div>
+                        </div>
 
-            <!--Quiz section-->
-            <section class="quiz-section">
-                <div class="quiz-box">
-                    <h2>Brain Ring</h2>
-                    <div class="quiz-header">
+                        <!--Question-->
+                        <div class="question-number"></div>
+                        <p class="question-text"> </p>
 
-                        <div class="header-score"></div>
+                        <!--Options-->
+                        <div class="options-list">
+                            <div class="option" onclick="getResult(this)"></div>
+                            <div class="option" onclick="getResult(this)"></div>
+                            <div class="option" onclick="getResult(this)"></div>
+                            <div class="option" onclick="getResult(this)"></div>
+                        </div>
+                        <!--Quiz Footer-->
+                        <div class="quiz-footer">
+                            <button type="button" class="next-btn" aria-label="next"
+                                onclick="next()"><span>Next</span></button>
+                        </div>
                     </div>
+                </section>
 
-                    <!--Question-->
-                    <div class="question-number"></div>
-                    <p class="question-text"> </p>
-
-                    <!--Options-->
-                    <div class="options-list">
-                        <div class="option" onclick="getResult(this)"></div>
-                        <div class="option" onclick="getResult(this)"></div>
-                        <div class="option" onclick="getResult(this)"></div>
-                        <div class="option" onclick="getResult(this)"></div>
-                    </div>
-                    <!--Quiz Footer-->
-                    <div class="quiz-footer">
-                        <button type="button" class="next-btn" aria-label="next"
-                            onclick="next()"><span>Next</span></button>
-                    </div>
+                <!--Result section-->
+                <div class="result-box">
+                    <h1>Result</h1>
+                    <table>
+                        <tr>
+                            <td>Total Questions</td>
+                            <td><span class="total-question"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Attempts</td>
+                            <td><span class="total-attempt"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Correct Answers</td>
+                            <td><span class="total-correct"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Wrong Answers</td>
+                            <td><span class="total-wrong"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Percentage</td>
+                            <td><span class="percentage"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Your Final Score</td>
+                            <td><span class="total-score"></span></td>
+                        </tr>
+                    </table>
+                    <button class="back-btn"><a href="index.html">Back</a></button>
+                    <button class="tryagain-btn" aria-label="try again">Try Again</button>
                 </div>
-            </section>
 
-            <!--Result section-->
-            <div class="result-box">
-                <h1>Result</h1>
-                <table>
-                    <tr>
-                        <td>Total Questions</td>
-                        <td><span class="total-question"></span></td>
-                    </tr>
-                    <tr>
-                        <td>Attempts</td>
-                        <td><span class="total-attempt"></span></td>
-                    </tr>
-                    <tr>
-                        <td>Correct Answers</td>
-                        <td><span class="total-correct"></span></td>
-                    </tr>
-                    <tr>
-                        <td>Wrong Answers</td>
-                        <td><span class="total-wrong"></span></td>
-                    </tr>
-                    <tr>
-                        <td>Percentage</td>
-                        <td><span class="percentage"></span></td>
-                    </tr>
-                    <tr>
-                        <td>Your Final Score</td>
-                        <td><span class="total-score"></span></td>
-                    </tr>
-                </table>
-                <button class="back-btn"><a href="index.html">Back</a></button>
-                <button class="tryagain-btn" aria-label="try again">Try Again</button>
+                <!--Welcome message section-->
+                <section class="home">
+                    <div class="home-content">
+                        <h1>Welcome to Brain Ring</h1>
+                        <p>Engage your mind, test your knowledge, and embark on a journey of intellect!</p>
+                        <label for="name-input" class="your-name"><i class="fa-solid fa-user-graduate"></i> Enter Your
+                            Name</label>
+                        <br>
+                        <input type="text" id="name-input" name="name-input" placeholder="Enter Your Name" required>
+                        <button class="start-btn" aria-label="start">Start</button>
+                        <button class="rules-btn" aria-label="rules" id="rules-btn">Rules</button>
+                    </div>
+                </section>
             </div>
+        </main>
 
-            <!--Welcome message section-->
-            <section class="home">
-                <div class="home-content">
-                    <h1>Welcome to Brain Ring</h1>
-                    <p>Engage your mind, test your knowledge, and embark on a journey of intellect!</p>
-                    <label for="name-input" class="your-name"><i class="fa-solid fa-user-graduate"></i> Enter Your
-                        Name</label>
-                    <br>
-                    <input type="text" id="name-input" name="name-input" placeholder="Enter Your Name" required>
-                    <button class="start-btn" aria-label="start">Start</button>
-                    <button class="rules-btn" aria-label="rules" id="rules-btn">Rules</button>
-                </div>
-            </section>
-        </div>
-    </main>
-
-    <!--Rules info-->
-    <div class="rules-info">
-        <h2>Quiz Rules</h2>
-        <p>We invite you to participate in our exciting quiz that will challenge your wits and expand your knowledge
-            horizons.
-        </p>
-        <h3>How it works:</h3>
-        <ol class="info">
-            <li>Enter your name.</li>
-            <li>Click <em> Start </em> button</li>
-            <li>You have may skip the question, pressing next button, but this effects your overall result negatively
-            </li>
-            <li>Once an answer is selected, the correct answer will turn green.</li>
-            <li>Answer all 10 questions to finish quiz</li>
-        </ol>
-        <div class="btn-group">
-            <button class="info-btn-exit" aria-label="exit">Exit</button>
+        <!--Rules info-->
+        <div class="rules-info">
+            <h2>Quiz Rules</h2>
+            <p>We invite you to participate in our exciting quiz that will challenge your wits and expand your knowledge
+                horizons.
+            </p>
+            <h3>How it works:</h3>
+            <ol class="info">
+                <li>Enter your name.</li>
+                <li>Click <em> Start </em> button</li>
+                <li>You have may skip the question, pressing next button, but this effects your overall result
+                    negatively
+                </li>
+                <li>Once an answer is selected, the correct answer will turn green.</li>
+                <li>Answer all 10 questions to finish quiz</li>
+            </ol>
+            <div class="btn-group">
+                <button class="info-btn-exit" aria-label="exit">Exit</button>
+            </div>
         </div>
     </div>
     <!--Font awesome kit-->
