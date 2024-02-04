@@ -19,6 +19,7 @@ Customized from https://stackoverflow.com/questions/58964299/why-is-the-vertical
 body div {
     overflow: hidden;
 }
+
 .header {
     position: fixed;
     top: 0;
@@ -42,7 +43,7 @@ body div {
 }
 
 .main.active {
-    filter: blur(50px);    
+    filter: blur(50px);
 }
 
 /*Home section*/
@@ -73,7 +74,7 @@ body div {
 
 .home-content.active {
     filter: blur(60px);
-    opacity: 0;  
+    opacity: 0;
 }
 
 
@@ -132,8 +133,7 @@ body div {
     color: #fff;
     background-color: #04AA6D;
     border: none;
-    border-radius: 15px;
-    box-shadow: 0 9px #999;
+    border-radius: 15px;   
 }
 
 .start-btn:hover {
@@ -161,7 +161,6 @@ body div {
     background-color: #72d1f7;
     border: none;
     border-radius: 15px;
-    box-shadow: 0 9px #999;
 }
 
 .rules-btn:hover {
@@ -177,8 +176,8 @@ body div {
 /*Set display none*/
 .no-display {
     display: none;
-    }
-    
+}
+
 
 /* Style rules section*/
 .rules-info {
@@ -225,17 +224,9 @@ body div {
     margin: 4px;
 }
 
-/*Style of Buttons in Rules Info*/
-.btn-group {
-    display: block;
-    align-items: center;
-    margin-top: 12px;
-}
+/*Style of Button in Rules Info*/
 
 .btn-group .info-btn-exit {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     transition-duration: 0.4s;
     width: 100px;
     height: 45px;
@@ -464,13 +455,13 @@ body div {
     color: white;
     opacity: 0;
     transition: .3s ease;
-    align-items: center;  
+    align-items: center;
 }
 
 /* Class to unable pointer events*/
 .no-pointer-event {
     pointer-events: none;
-    }
+}
 
 /* Style the result section */
 .result-box.active {
@@ -528,6 +519,7 @@ body div {
     background-color: #04AA6D;
     color: white;
 }
+
 .back-btn {
     display: flex;
     justify-content: center;
@@ -543,8 +535,9 @@ body div {
     font-size: 16px;
     font-weight: 600;
     outline: none;
-    border-radius: 8px; 
+    border-radius: 8px;
 }
+
 .back-btn:hover {
     background-color: #04AA6D;
     color: white;
@@ -587,10 +580,6 @@ body div {
         max-width: 600px;
     }
 
-    .header a {
-        font-size: 25px;
-    }
-
     /*Make title bigger*/
     .home-content h1 {
         font-size: 50px;
@@ -604,6 +593,12 @@ body div {
     .rules-btn,
     .start-btn {
         width: 190px;
+    }
+
+    .info-btn-exit {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     /*Make name input bigger*/
@@ -622,7 +617,7 @@ body div {
 
     .quiz-box .quiz-header .header-score div {
         width: 30px;
-        border-radius: 50%;        
+        border-radius: 50%;
     }
 
     /*Make buttons in row*/

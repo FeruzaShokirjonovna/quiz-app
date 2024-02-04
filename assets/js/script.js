@@ -4,15 +4,15 @@ const rulesInfo = document.querySelector('.rules-info');
 const exitBtn = document.querySelector('.info-btn-exit');
 const main = document.querySelector('.main');
 const quizSection = document.querySelector('.quiz-section');
-const startBtn = document.querySelector('.start-btn')
-const quizBox = document.querySelector('.quiz-box')
+const startBtn = document.querySelector('.start-btn');
+const quizBox = document.querySelector('.quiz-box');
 const homeBox = document.querySelector('.home-content');
-const resultBox = document.querySelector('.result-box')
+const resultBox = document.querySelector('.result-box');
 const nameInput = document.getElementById('name-input');
 const questionText = document.querySelector('.question-text');
-const questionNumber = document.querySelector('.question-number')
-const optionsList = document.querySelector('.options-list')
-const scoreIndicatorContainer = document.querySelector('.header-score')
+const questionNumber = document.querySelector('.question-number');
+const optionsList = document.querySelector('.options-list');
+const scoreIndicatorContainer = document.querySelector('.header-score');
 const tryAgainBtn = document.querySelector('.tryagain-btn');
 const homeSection = document.querySelector('.home');
 
@@ -27,7 +27,6 @@ document.querySelectorAll('.option').forEach(option => {
     option.addEventListener('click', () => {
         // Remove 'selected' class from all options
         document.querySelectorAll('.option').forEach(opt => opt.classList.remove('selected'));
-
         // Add 'selected' class to the clicked option
         option.classList.add('selected');
     });
@@ -42,8 +41,7 @@ function clickedButtonHandler(event) {
     //check if try again button clicked, then reset quiz
     if (clickedButton === tryAgainBtn) {
         resetQuiz();
-    }
-    
+    }   
     // Check if Start button is clicked
     if (clickedButton === startBtn) {
         // Check if the nameInput is empty
@@ -72,7 +70,6 @@ function clickedButtonHandler(event) {
 
 // Inside this function, the DOM is fully loaded
 document.addEventListener('DOMContentLoaded', function () {
-    
     const nameInput = document.getElementById('name-input');
     nameInput.focus();
 });
@@ -85,7 +82,6 @@ document.addEventListener('DOMContentLoaded', function () {
     let correctAnswers = 0;
     const totalQuestion = 10;
     let attempt = 0;
-
     const nextBtn = document.querySelector('.next-btn');
     
 
@@ -116,7 +112,6 @@ document.addEventListener('DOMContentLoaded', function () {
         const index1 = availableQuestions.indexOf(questionIndex);
         //remove the question index, that is why once given question will not repeated
         availableQuestions.splice(index1, 1);
-
         //set options
         //get the length of options
         const optionLen = currentQuestion.options.length
@@ -126,28 +121,22 @@ document.addEventListener('DOMContentLoaded', function () {
         }
         //remove old options
         optionsList.innerHTML = '';
-
         //create options in html
         for (let i = 0; i < optionLen; i++) {
             //random option
             const optionIndex = availableOptions[Math.floor(Math.random() * availableOptions.length)];
-
             // get the position of optionIndex from available options
             const index2 = availableOptions.indexOf(optionIndex);
-
             //remove the option from options array, then option will not repeat
             availableOptions.splice(index2, 1);
             const option = document.createElement("div");
             option.innerHTML = currentQuestion.options[optionIndex];
             option.id = optionIndex;
-
             option.className = "option";
             optionsList.appendChild(option)
             option.setAttribute('onclick', 'getResult(this)');
         }
-
         questionCount++
-
     }
 
     /***
@@ -181,7 +170,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
             }
         }
-        attempt++;
         unclickableOptions();
     }
 
@@ -199,8 +187,7 @@ document.addEventListener('DOMContentLoaded', function () {
      * Function to set score
      */
     function scoreIndicator() {
-        scoreIndicatorContainer.innerHTML = '';
-        
+        scoreIndicatorContainer.innerHTML = '';     
         for (let i = 0; i < totalQuestion; i++) {
             const indicator = document.createElement('div');
             scoreIndicatorContainer.appendChild(indicator);
@@ -212,7 +199,6 @@ document.addEventListener('DOMContentLoaded', function () {
      */
     function updateScoreIndicator(markType) {
         scoreIndicatorContainer.children[questionCount - 1].classList.add(markType)
-
     }
 
     /***
@@ -253,11 +239,8 @@ document.addEventListener('DOMContentLoaded', function () {
      * Function to get the user result 
      */
     function quizResult() {
-        
         resultBox.querySelector('.total-question').innerHTML = totalQuestion;
-        resultBox.querySelector('.total-attempt').innerHTML = attempt;
         resultBox.querySelector('.total-correct').innerHTML = correctAnswers;
-        resultBox.querySelector('.total-wrong').innerHTML = attempt - correctAnswers;
         const percentage = (correctAnswers / totalQuestion) * 100;
         resultBox.querySelector('.percentage').innerHTML = percentage.toFixed(2) + "%";
         resultBox.querySelector('.total-score').innerHTML = correctAnswers + " / " + totalQuestion;
@@ -270,7 +253,7 @@ document.addEventListener('DOMContentLoaded', function () {
         quizSection.classList.add('active');
         quizBox.classList.add('active');
         correctAnswers = 0;
-        attempt = 0;
+        attempt ++;
         questionCount = 0;
         startQuiz();
     }
