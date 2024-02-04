@@ -141,33 +141,36 @@ The website will follow a mobile-first strategy, the main target is to create a 
 ### Welcome Page
 
 - The welcome page serves as an introduction to the game, providing essential details about the rules and mechanics. 
-- In every page There is Home link, which leads to Home Page.
 - Rules can be seen by pressing the Rules button.
-- The user enters there a username, i not there is alert message "Please enter your name".
+- The user enters a username. In case the user presses the start button before entering the username, there is a pop-up alert message "Please enter your name".
 
  Mobile View:
 
-![Mobile View](assets/images/home-page-mobile.jpg)
+![Mobile View](assets/images/home_page_mobile.png)
 
 Tablet View:
 
-![Tablet View](assets/images/Home-page-tablet.png)
+![Tablet View](assets/images//home_page_tablet.png)
 
 Desktop View:
 
-![Desktop View](assets/images/Home-page.png)
+![Desktop View](assets/images/home_page.png)
 
 Rules Info:
 
-![Rules Info](assets/images/rules.png)
+![Rules Info](assets/images/rules_info.png)
+
+Invalid name input alert message:
+
+![Invalid name input alert message](assets/images/invalid_name_input_alert_message.png)
 
 ### Game Page
 
 - The game page offers an engaging quiz experience, presenting a series of questions. Users are challenged to answer each question correctly.
 - The interface is designed for intuitive navigation, with interactive elements for selecting answers.
 - Visual feedback, such as highlighting correct and incorrect choices and score indicator, enhances the gaming experience.
-- Users have an option of skipping question if they don't know the answer, however this affects their overall result.
 - Score Indicator style varies due to screen sizes.
+- If the user ttries to skip the question without choosing any option, a pop-up alert message will be displayed. 
 
 Mobile View:
 
@@ -181,22 +184,19 @@ Desktop View:
 
 ![Desktop View](assets/images/quiz-page.png)
 
+Alert message:
+
+![Alert message](assets/images/alert_message.png)
+
 ### Results Page
 
-- Upon completing the quiz, the results page displays the user's performance. A detailed summary includes the number of correct and incorrect answers.
+- Upon completing the quiz, the results page displays the user's performance. A detailed summary includes the user's name, the number of correct answers and overall score.
 - Clicking Try Again button a user has a chance of play again the quiz.
+- Choosing to press Back button, the user is leaded to the Home page.
 
- Mobile View:
+ Result page:
 
-![Mobile View](assets/images/result-page-mobile.jpg)
-
-Tablet View:
-
-![Tablet View](assets/images/result-page-tablet.png)
-
-Desktop View:
-
-![Desktop View](assets/images/result-page.png)
+![Mobile View](assets/images/result_page.png)
 
 ### 404 Error page
 

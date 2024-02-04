@@ -238,7 +238,9 @@ document.addEventListener('DOMContentLoaded', function () {
     /***
      * Function to get the user result 
      */
-    function quizResult() {
+    function quizResult(){
+        const userNameElement = resultBox.querySelector('.name-input'); 
+        userNameElement.innerHTML = nameInput.value; 
         resultBox.querySelector('.total-question').innerHTML = totalQuestion;
         resultBox.querySelector('.total-correct').innerHTML = correctAnswers;
         const percentage = (correctAnswers / totalQuestion) * 100;
