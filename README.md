@@ -291,7 +291,7 @@ Alert message:
 ### Validation tests
 
 - HTML, CSS and JavaScript codes where all tested jigsaw.w3.org / validator.w3.org / jshint.com
-- JShint was used to test the the JavaScript code, there was 1 undefined variable for question which is in questions.js folder, there were a number of warnings for 'const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz). The warnings are be removed by include a commented out line at the top of the file /*jshint esversion: 6 */.
+- JShint was used to test the the JavaScript code, there was 1 undefined variable for question which is in questions.js folder, there were a number of warnings for 'const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz). The warnings are be removed by include a commented out line at the top of the file /*jshint esversion: 6 */. Also, there were two unused variable warnings, the reason for that is these variables are being called from HTML. 
 
 HTML Validation Image:
 
@@ -303,7 +303,7 @@ Css Validation Image:
 
 Javascript Validation Image
 
-![Javascript Validation Image](assets/images/jshint-test.png)
+![Javascript Validation Image](assets/images/jshint_validation.png)
 
 ## Bugs
 
@@ -359,6 +359,7 @@ Cloning the repository will allow to download a local version of the repository 
 - CSS:
 - Start and Rules "pressed" Button styles are customized from [W3schools](https://www.w3schools.com/css/css3_buttons.asp).
 - Quiz Box shadow is Customized from [html-css-js](https://html-css-js.com/css/generator/box-shadow/).
+- To remove scrolling on mobile screens [Stack Overflow](https://stackoverflow.com/questions/58964299/why-is-the-vertical-scroll-getting-stuck-in-mobile-view*/)
 
 - Javascript:
 - Inspired by Love Math Project.
