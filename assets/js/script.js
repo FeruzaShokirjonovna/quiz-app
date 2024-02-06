@@ -82,7 +82,6 @@ document.addEventListener('DOMContentLoaded', function () {
     let availableOptions = [];
     let correctAnswers = 0;
     const totalQuestion = 10;
-    let attempt = 0;
     const nextBtn = document.querySelector('.next-btn');
     
 
@@ -256,7 +255,6 @@ document.addEventListener('DOMContentLoaded', function () {
         quizSection.classList.add('active');
         quizBox.classList.add('active');
         correctAnswers = 0;
-        attempt ++;
         questionCount = 0;
         startQuiz();
     }
