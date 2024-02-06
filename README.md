@@ -192,7 +192,7 @@ Alert message:
 
 - Upon completing the quiz, the results page displays the user's performance. A detailed summary includes the user's name, the number of correct answers and overall score.
 - Clicking Try Again button a user has a chance of play again the quiz.
-- Choosing to press Back button, the user is leaded to the Home page.
+- Choosing to press Home button, the user is leaded to the Home page.
 
  Result page:
 
@@ -248,7 +248,7 @@ Alert message:
 | 5         | Click the next button skipping to choose any option. |Alert message displays: "Please select an anwer before moving to the next question."  |
 | 6         | Complete the quiz. | Final score message displays with the table of results. |
 | 7         | Click on the "Try Again" button after completing the quiz. | Game restarts, and the first question is displayed. |
-| 8         | Click on the "Back" button after completing the quiz. | The home page is displayed. |
+| 8         | Click on the "Home" button after completing the quiz. | The home page is displayed. |
 
 
 ### Responsive Design Tests
@@ -285,7 +285,7 @@ Alert message:
 | 2         | Click on the "Exit" button in Rules. | How to play section disappears. |
 | 3         | Skip the question without selecting an answer. | An alert message displays to ask the user to choose an option. |
 | 4         | Reset the game after completing it. | Game resets, and the start page is displayed. |
-| 5         | Click on the "Back" button after completing the game. | The home page is displayed. |
+| 5         | Click on the "Home" button after completing the game. | The home page is displayed. |
 | 6         | Test the game on various browsers. | Game functions correctly on major web browsers. |
 
 ### Validation tests
@@ -309,7 +309,7 @@ Javascript Validation Image
 
 ## Fixed Bugs
 
-During validation these bugs became known during the validation stage, a brief description is below:
+* During validation these bugs became known during the validation stage, a brief description is below:
 
 ![HTML](assets/images/html-bug.png)
 
@@ -318,6 +318,12 @@ These are easily fixed by removing slash.
 ![CSS](assets/images/bug-css.png)
 
 This was an oversight from the development phase when the font size was being modified. It was easily fixed by setting the background color as planned.
+
+* During manual testing, it was known that, the user is able to submit the quiz empty without selecting any answers. This is fixed by adding javascript code which unables the user skip the question empty.
+
+* There was lots of vertical scrolling on mobile screens due to the large white container underneath the game. This responsiveness issue is fixed by wrapping all sections with div container.
+
+* There was "Home" link in header, which served as navigation link to the home page. It was changed a Home button on results page as it was making navigation difficult.
 
 ## Unfixed Bugs
 
